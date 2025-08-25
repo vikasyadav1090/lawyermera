@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advocate Vikas Yadav - Etawah's Leading Criminal & Family Lawyer</title>
-    <meta name="description" content="Advocate Vikas Yadav is a top-rated lawyer in Etawah, UP, specializing in Criminal Defense and Family Law cases. Get expert legal consultation for bail, divorce, property disputes, and more.">
-    <meta name="keywords" content="Advocate Vikas Yadav, Best lawyer in Etawah, Criminal lawyer Etawah, Family lawyer Etawah, Divorce lawyer Etawah, Bail lawyer Etawah, Property lawyer Etawah, Etawah District Court, Legal Services Etawah">
+    <title>Find Best Lawyers, Advocates, Vakil in Etawah | Lawyermera.com</title>
+    
+    <meta name="description" content="Lawyermera.com is Etawah's top directory to find expert lawyers, advocates, and vakils for criminal, family, and property cases. Get instant legal help and online consultation.">
+    
+    <meta name="keywords" content="वकील इटावा, इटावा के वकील, बेस्ट वकील इटावा, क्रिमिनल वकील इटावा, फैमिली वकील, lawyer in etawah, advocate in etawah, vakil in etawah, best criminal lawyer in etawah, top family advocate etawah, etawah court lawyer, legal services etawah, online legal advice">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
     <style>
         :root {
-            --primary-bg-color: #f8f9fa;
-            --secondary-bg-color: #ffffff;
-            --primary-text-color: #212529;
-            --secondary-text-color: #6c757d;
-            --accent-color: #b28f5a; /* Gold Accent */
-            --dark-color: #343a40;
-            --whatsapp-color: #25D366;
-            --shadow: 0 5px 20px rgba(0,0,0,0.1);
+            --primary-color: #0d3b66; /* Deep Steel Blue */
+            --secondary-color: #f4d35e; /* Muted Gold/Yellow */
+            --bg-color: #f9f9f9; /* Off-white */
+            --text-color: #333;
+            --light-text-color: #666;
+            --white-color: #fff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
 
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.7;
-            color: var(--primary-text-color);
-            background-color: var(--primary-bg-color);
+            background-color: var(--bg-color);
+            color: var(--text-color);
         }
         html {
             scroll-behavior: smooth;
@@ -38,95 +38,118 @@
 
         /* --- Header --- */
         .header {
-            background-color: var(--secondary-bg-color);
-            padding: 15px 50px;
+            background-color: var(--white-color);
+            padding: 15px 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             box-shadow: var(--shadow);
-            position: fixed;
-            width: 100%;
+            position: sticky;
             top: 0;
             z-index: 1000;
         }
         .header .logo a {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 700;
-            font-family: 'Lora', serif;
-            color: var(--dark-color);
+            color: var(--primary-color);
             text-decoration: none;
         }
         .header .logo a span {
-            color: var(--accent-color);
+            color: var(--secondary-color);
         }
         .header .nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 30px;
+            list-style: none; margin: 0; padding: 0; display: flex; gap: 35px;
         }
         .header .nav a {
-            color: var(--primary-text-color);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
+            color: var(--text-color); text-decoration: none; font-weight: 500; transition: color 0.3s;
         }
-        .header .nav a:hover {
-            color: var(--accent-color);
-        }
-        .menu-toggle { display: none; cursor: pointer; font-size: 24px; }
+        .header .nav a:hover { color: var(--primary-color); }
+        .menu-toggle { display: none; cursor: pointer; font-size: 24px; color: var(--primary-color); }
 
-        /* --- Hero Section --- */
-        .hero-section {
-            display: flex;
-            align-items: center;
-            padding: 150px 50px 80px 50px;
-            min-height: 80vh;
-            background-color: var(--dark-color);
-            color: white;
-        }
-        .hero-content {
-            max-width: 50%;
-            padding-right: 40px;
-        }
-        .hero-content h1 {
-            font-family: 'Lora', serif;
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 1.2;
-            margin: 0 0 20px 0;
-        }
-        .hero-content h1 span {
-            color: var(--accent-color);
-        }
-        .hero-content .subtitle {
-            font-size: 20px;
-            color: #e9ecef;
-            margin-bottom: 30px;
-            font-weight: 500;
-        }
-        .hero-image {
-            max-width: 50%;
+        /* --- Lawyer Profile Slider Section --- */
+        .lawyer-slider-section {
+            padding: 60px 5%;
             text-align: center;
         }
-        .hero-image img {
-            width: 400px;
-            height: 400px;
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--light-text-color);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .slider-container {
+            position: relative;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .lawyer-card {
+            flex: 0 0 100%;
+            background: var(--white-color);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            padding: 30px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            text-align: left;
+        }
+        .lawyer-card.featured {
+            border: 2px solid var(--secondary-color);
+        }
+        .lawyer-photo {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 8px solid var(--accent-color);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 5px solid var(--primary-color);
+        }
+        .lawyer-info h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        .lawyer-info .location {
+            font-size: 16px;
+            color: var(--light-text-color);
+            margin-bottom: 10px;
+        }
+        .lawyer-info .specialization {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-color);
+            margin-bottom: 15px;
+        }
+        .lawyer-info .badge {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
         }
         .cta-button {
-            background-color: var(--accent-color);
-            color: #fff;
-            padding: 15px 30px;
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            padding: 12px 25px;
             text-decoration: none;
-            font-size: 16px;
             font-weight: 600;
             border-radius: 50px;
-            transition: all 0.3s ease;
+            transition: background-color 0.3s;
             display: inline-flex;
             align-items: center;
             gap: 10px;
@@ -134,204 +157,101 @@
             cursor: pointer;
         }
         .cta-button:hover {
-            background-color: #9a7947;
-            transform: translateY(-3px);
+            background-color: #092c4c;
         }
-
-        /* --- Section General --- */
-        .section {
-            padding: 80px 50px;
-            text-align: center;
-        }
-        .section h2 {
-            font-family: 'Lora', serif;
-            font-size: 38px;
-            font-weight: 700;
-            color: var(--dark-color);
-            margin-bottom: 20px;
-            position: relative;
-        }
-        .section h2::after {
-            content: ''; width: 60px; height: 4px; background-color: var(--accent-color);
-            position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
-        }
-        .section-intro {
-            max-width: 800px;
-            margin: 0 auto 50px auto;
-            color: var(--secondary-text-color);
-            font-size: 18px;
-        }
-
-        /* --- About Section --- */
-        .about-section { background-color: var(--secondary-bg-color); }
-        .about-content {
+        .slider-controls {
             display: flex;
-            align-items: center;
-            gap: 50px;
-            text-align: left;
-            margin-top: 50px;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
         }
-        .about-text { flex: 1; }
-        .about-image { flex-basis: 300px; }
-        .about-image img { width: 100%; border-radius: 15px; box-shadow: var(--shadow); }
-
-        /* --- Expertise Section --- */
-        .expertise-container {
+        .slider-control {
+            background: var(--primary-color);
+            color: var(--white-color);
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .slider-control:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+        
+        /* --- Online Services Section --- */
+        .online-services {
+            padding: 60px 5%;
+            background-color: #eef4f9; /* Light Blue BG */
+        }
+        .services-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-top: 50px;
-            text-align: left;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: auto;
         }
-        .expertise-column h3 {
-            font-family: 'Lora', serif;
-            font-size: 28px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            color: var(--dark-color);
+        .service-card {
+            background: var(--white-color);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--primary-color);
         }
-        .expertise-column .icon {
-            color: var(--accent-color);
-            font-size: 32px;
-        }
-        .expertise-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .expertise-list li {
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%23b28f5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>') no-repeat left center;
-            padding-left: 35px;
-            font-size: 16px;
+        .service-card i {
+            font-size: 40px;
+            color: var(--primary-color);
             margin-bottom: 15px;
-            color: var(--secondary-text-color);
-            font-weight: 500;
         }
-        
-        /* --- Online Services & Payment Section --- */
-        .payment-section { background-color: var(--dark-color); color: white; }
-        .payment-section h2 { color: white; }
-        .payment-section .section-intro { color: #e9ecef; }
-        .payment-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+        .service-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: var(--primary-color);
         }
-        .payment-card {
-            background-color: var(--secondary-bg-color);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: var(--shadow);
-            text-align: center;
-            color: var(--primary-text-color);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .payment-card h3 { font-family: 'Lora', serif; font-size: 24px; color: var(--dark-color); }
-        .payment-card .price { font-size: 42px; font-weight: 700; color: var(--accent-color); margin: 10px 0; }
-        .payment-card p { color: var(--secondary-text-color); }
-        .payment-card ol { text-align: left; padding-left: 20px; margin: 20px 0; }
-        .upi-button {
-            background-color: #3498db; /* UPI Blue */
-            width: 100%;
-            margin-top: 20px;
-        }
-        .upi-button:hover { background-color: #2980b9; }
-
-        /* --- Testimonials --- */
-        .testimonial-section { background-color: var(--primary-bg-color); }
-        .testimonial-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-        .testimonial-card {
-            background: var(--secondary-bg-color);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            border-left: 5px solid var(--accent-color);
-        }
-        .testimonial-card p {
-            font-style: italic;
-            color: var(--secondary-text-color);
-            margin: 0 0 20px 0;
-        }
-        .client-info {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .client-info img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; }
-        .client-name { font-weight: 600; color: var(--dark-color); }
-        .client-location { font-size: 14px; color: var(--secondary-text-color); }
-        
-        /* --- Contact Section --- */
-        .contact-section { background-color: var(--secondary-bg-color); }
-        .contact-container {
-            display: flex;
-            gap: 50px;
-            margin-top: 50px;
-            align-items: flex-start;
-        }
-        .contact-details, .contact-map {
-            flex: 1;
-            text-align: left;
-        }
-        .contact-details h3 { font-family: 'Lora', serif; margin-top: 0; }
-        .contact-details p {
+        .service-card p {
+            color: var(--light-text-color);
+            line-height: 1.6;
             margin-bottom: 20px;
-            font-size: 18px;
-            line-height: 1.8;
         }
-        .contact-details i {
-            color: var(--accent-color);
-            margin-right: 15px;
-            width: 20px;
-            text-align: center;
+        .service-card .price {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 20px;
         }
-        .contact-map iframe {
-            width: 100%;
-            height: 400px;
-            border: 0;
-            border-radius: 15px;
-            box-shadow: var(--shadow);
+        .service-card .price span {
+            font-size: 16px;
+            font-weight: 400;
         }
-
+        
         /* --- Footer --- */
         .footer {
-            background-color: var(--dark-color);
-            color: #fff;
+            background-color: var(--primary-color);
+            color: var(--white-color);
             text-align: center;
             padding: 40px 20px;
         }
 
-        /* --- Responsive --- */
+        /* --- Responsive Design --- */
         @media (max-width: 992px) {
-            .hero-section { flex-direction: column-reverse; text-align: center; padding: 120px 20px 50px 20px; }
-            .hero-content, .hero-image { max-width: 100%; padding: 0; }
-            .hero-image img { width: 250px; height: 250px; margin-top: 30px; }
-            .hero-content h1 { font-size: 36px; }
-            .about-content, .contact-container { flex-direction: column; }
-            .expertise-container { grid-template-columns: 1fr; }
-            .section { padding: 60px 20px; }
+            .lawyer-card { flex-direction: column; text-align: center; }
         }
         @media (max-width: 768px) {
             .header { padding: 15px 20px; }
             .header .nav {
                 display: none; flex-direction: column; position: absolute;
-                top: 70px; left: 0; width: 100%; background-color: var(--secondary-bg-color);
+                top: 72px; left: 0; width: 100%; background-color: var(--white-color);
                 box-shadow: var(--shadow);
             }
             .header .nav.active { display: flex; }
             .header .nav ul { flex-direction: column; padding: 10px 0; }
             .header .nav a { display: block; padding: 15px 20px; text-align: center; }
             .menu-toggle { display: block; }
+            .section-title { font-size: 28px; }
+            .lawyer-info h3 { font-size: 20px; }
         }
     </style>
 </head>
@@ -339,15 +259,14 @@
 
     <header class="header">
         <div class="logo">
-            <a href="#">Advocate <span>Vikas Yadav</span></a>
+            <a href="#">Lawyermera<span>.com</span></a>
         </div>
         <nav class="nav" id="mobile-menu">
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#payment">Online Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#find-lawyer">Find a Lawyer</a></li>
+                <li><a href="#online-services">Online Services</a></li>
+                <li><a href="#">Legal Articles</a></li>
+                <li><a href="#">About Us</a></li>
             </ul>
         </nav>
         <div class="menu-toggle" onclick="toggleMenu()">
@@ -356,173 +275,125 @@
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1>Advocate Vikas Yadav: <span>Etawah's</span> Leading Criminal & Family Lawyer</h1>
-                <p class="subtitle">
-                    Providing expert, strategic, and aggressive legal representation in Etawah District Court. If you are facing a tough legal battle, you need a tougher lawyer.
-                </p>
-                <a href="tel:8979737979" class="cta-button"><i class="fa-solid fa-phone"></i> Call for Immediate Consultation</a>
-                <a href="https://wa.me/918979737979?text=Hello%20Advocate%20Vikas%20Yadav,%20I%20need%20legal%20help%20in%20Etawah." style="background-color: var(--whatsapp-color); margin-left: 15px;" class="cta-button"><i class="fa-brands fa-whatsapp"></i> WhatsApp Now</a>
+        <section id="find-lawyer" class="lawyer-slider-section">
+            <h1 class="section-title">Find the Best Lawyers in Etawah, UP</h1>
+            <p class="section-subtitle">Connect with verified and experienced advocates in Etawah and across Uttar Pradesh. Your search for expert legal guidance ends here.</p>
+            
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="lawyer-card featured">
+                        <img src="https://via.placeholder.com/150" alt="Advocate Vikas Yadav, Etawah" class="lawyer-photo">
+                        <div class="lawyer-info">
+                            <span class="badge">Top Rated in Etawah</span>
+                            <h3>Advocate Vikas Yadav</h3>
+                            <div class="location"><i class="fa-solid fa-location-dot"></i> Etawah, Uttar Pradesh</div>
+                            <p class="specialization"><strong>Expertise:</strong> Criminal Defense, Family Law, Property Disputes, Bail Matters</p>
+                            <a href="tel:8979737979" class="cta-button"><i class="fa-solid fa-phone"></i> Call Now</a>
+                            <a href="https://wa.me/918979737979" style="margin-left:10px; background-color:#25D366;" class="cta-button"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        </div>
+                    </div>
+
+                    <div class="lawyer-card">
+                        <img src="https://via.placeholder.com/150/EEEEEE/333333?text=PS" alt="Advocate Priya Sharma" class="lawyer-photo">
+                        <div class="lawyer-info">
+                            <h3>Advocate Priya Sharma</h3>
+                            <div class="location"><i class="fa-solid fa-location-dot"></i> Lucknow, Uttar Pradesh</div>
+                            <p class="specialization"><strong>Expertise:</strong> Corporate Law, Civil Litigation</p>
+                             <a href="#" class="cta-button">View Profile</a>
+                        </div>
+                    </div>
+
+                    <div class="lawyer-card">
+                        <img src="https://via.placeholder.com/150/DDDDDD/333333?text=RS" alt="Advocate Rohan Singh" class="lawyer-photo">
+                        <div class="lawyer-info">
+                            <h3>Advocate Rohan Singh</h3>
+                            <div class="location"><i class="fa-solid fa-location-dot"></i> Kanpur, Uttar Pradesh</div>
+                            <p class="specialization"><strong>Expertise:</strong> Cheque Bounce, Consumer Court</p>
+                             <a href="#" class="cta-button">View Profile</a>
+                        </div>
+                    </div>
+                     
+                    <div class="lawyer-card"><img src="https://via.placeholder.com/150/CCCCCC/333333?text=AK" alt="Lawyer" class="lawyer-photo"><div class="lawyer-info"><h3>Advocate Anjali Khanna</h3><div class="location"><i class="fa-solid fa-location-dot"></i> Agra, UP</div><p class="specialization"><strong>Expertise:</strong> Matrimonial Law</p><a href="#" class="cta-button">View Profile</a></div></div>
+                    <div class="lawyer-card"><img src="https://via.placeholder.com/150/BBBBBB/333333?text=SK" alt="Lawyer" class="lawyer-photo"><div class="lawyer-info"><h3>Advocate Sameer Kumar</h3><div class="location"><i class="fa-solid fa-location-dot"></i> Varanasi, UP</div><p class="specialization"><strong>Expertise:</strong> Real Estate Law</p><a href="#" class="cta-button">View Profile</a></div></div>
+                    <div class="lawyer-card"><img src="https://via.placeholder.com/150/AAAAAA/333333?text=NG" alt="Lawyer" class="lawyer-photo"><div class="lawyer-info"><h3>Advocate Neha Gupta</h3><div class="location"><i class="fa-solid fa-location-dot"></i> Noida, UP</div><p class="specialization"><strong>Expertise:</strong> Cyber Law</p><a href="#" class="cta-button">View Profile</a></div></div>
+                    <div class="lawyer-card"><img src="https://via.placeholder.com/150/999999/FFFFFF?text=VM" alt="Lawyer" class="lawyer-photo"><div class="lawyer-info"><h3>Advocate Vikram Mehta</h3><div class="location"><i class="fa-solid fa-location-dot"></i> Ghaziabad, UP</div><p class="specialization"><strong>Expertise:</strong> Tax Law</p><a href="#" class="cta-button">View Profile</a></div></div>
+                    <div class="lawyer-card"><img src="https://via.placeholder.com/150/888888/FFFFFF?text=SP" alt="Lawyer" class="lawyer-photo"><div class="lawyer-info"><h3>Advocate Sunita Patel</h3><div class="location"><i class="fa-solid fa-location-dot"></i> Meerut, UP</div><p class="specialization"><strong>Expertise:</strong> Labor Law</p><a href="#" class="cta-button">View Profile</a></div></div>
+                    <div class="lawyer-card"><img src="https://via.placeholder.com/150/777777/FFFFFF?text=AT" alt="Lawyer" class="lawyer-photo"><div class="lawyer-info"><h3>Advocate Alok Tiwari</h3><div class="location"><i class="fa-solid fa-location-dot"></i> Prayagraj, UP</div><p class="specialization"><strong>Expertise:</strong> Intellectual Property</p><a href="#" class="cta-button">View Profile</a></div></div>
+                    <div class="lawyer-card"><img src="https://via.placeholder.com/150/666666/FFFFFF?text=RJ" alt="Lawyer" class="lawyer-photo"><div class="lawyer-info"><h3>Advocate Rahul Joshi</h3><div class="location"><i class="fa-solid fa-location-dot"></i> Bareilly, UP</div><p class="specialization"><strong>Expertise:</strong> Banking Law</p><a href="#" class="cta-button">View Profile</a></div></div>
+
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/400" alt="Advocate Vikas Yadav - Best Lawyer in Etawah">
+            <div class="slider-controls">
+                <button class="slider-control" onclick="moveSlider(-1)">&#10094;</button>
+                <button class="slider-control" onclick="moveSlider(1)">&#10095;</button>
             </div>
         </section>
 
-        <section id="about" class="section about-section">
-            <h2>Meet Advocate Vikas Yadav</h2>
-            <p class="section-intro">Your dedicated legal partner in Etawah, committed to protecting your rights and securing your future.</p>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>A Trusted Name in Etawah's Legal Community</h3>
-                    <p>With years of dedicated practice in the Etawah District Court, I, Advocate Vikas Yadav, have built a reputation for being a knowledgeable, result-oriented, and client-focused lawyer. My primary goal is to provide top-tier legal services to the people of Etawah.</p>
-                    <p>I understand that legal challenges, especially those involving criminal charges or family disputes, can be incredibly stressful. That's why I am committed to not only fighting vigorously on your behalf but also guiding you with clarity and compassion through every step of the legal process. My deep understanding of local laws and court procedures gives my clients a significant advantage.</p>
-                    <p><strong>Your fight is my fight. Let's win it together.</strong></p>
+        <section id="online-services" class="online-services">
+            <h2 class="section-title" style="text-align: center;">Instant Online Legal Services</h2>
+            <p class="section-subtitle" style="text-align: center;">Get quick and professional legal help from anywhere in India. Simple, fast, and confidential.</p>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>On-Call Professional Consultation</h3>
+                    <p>Need expert advice on a legal matter? Talk to a professional lawyer for 15 minutes and get your doubts cleared.</p>
+                    <div class="price">₹100 <span>/ per call</span></div>
+                    <a href="upi://pay?pa=9410851090-n532@ybl&pn=Lawyermera%20Consultation&am=100&cu=INR&tn=Legal_Consultation" class="cta-button">Pay & Get Consultation</a>
                 </div>
-                <div class="about-image">
-                     <img src="https://via.placeholder.com/300x400" alt="Advocate Vikas Yadav in his office">
-                </div>
-            </div>
-        </section>
-
-        <section id="expertise" class="section">
-            <h2>My Areas of Expertise</h2>
-            <p class="section-intro">While I handle a wide range of legal matters, my core focus and extensive experience lie in Criminal Defense and Family Law—the two areas where sound legal counsel matters most.</p>
-            <div class="expertise-container">
-                <div class="expertise-column">
-                    <h3><span class="icon"><i class="fa-solid fa-shield-halved"></i></span>Criminal Law Expertise</h3>
-                    <ul class="expertise-list">
-                        <li><strong>Bail & Anticipatory Bail (अग्रिम ज़मानत)</strong></li>
-                        <li>F.I.R & Complaints Filing</li>
-                        <li>Cases under IPC (Murder, Theft, Fraud)</li>
-                        <li><strong>Cheque Bounce Cases (Section 138)</strong></li>
-                        <li>NDPS Act (Narcotics) Cases</li>
-                        <li>Cyber Crime & Online Fraud</li>
-                        <li>Criminal Appeals & Revisions</li>
-                    </ul>
-                </div>
-                <div class="expertise-column">
-                    <h3><span class="icon"><i class="fa-solid fa-users"></i></span>Family Law Matters</h3>
-                    <ul class="expertise-list">
-                        <li><strong>Divorce (Mutual & Contested)</strong></li>
-                        <li><strong>Domestic Violence (घरेलू हिंसा)</strong></li>
-                        <li>Maintenance for Wife & Children (भरण-पोषण)</li>
-                        <li>Child Custody Matters</li>
-                        <li><strong>Court Marriage & Registration</strong></li>
-                        <li>Property & Land Disputes (संपत्ति विवाद)</li>
-                        <li>Legal Drafting (Wills, Agreements)</li>
-                    </ul>
+                <div class="service-card">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    <h3>Traffic Challan Assistance</h3>
+                    <p>Received a traffic challan? We can help you understand the process and guide you on the next steps to resolve it.</p>
+                    <div class="price">₹250 <span>/ per challan</span></div>
+                    <a href="upi://pay?pa=9410851090-n532@ybl&pn=Lawyermera%20Challan&am=250&cu=INR&tn=Challan_Assistance" class="cta-button">Pay & Get Help</a>
                 </div>
             </div>
         </section>
         
-        <section id="payment" class="section payment-section">
-            <h2>Online Legal Services (All India)</h2>
-            <p class="section-intro">Get professional legal advice or get a legal notice drafted from the comfort of your home, anywhere in India.</p>
-            <div class="payment-container">
-                <div class="payment-card">
-                    <div>
-                        <h3>On-Call Legal Consultation</h3>
-                        <p class="price">₹100</p>
-                        <p>Get expert legal advice on any matter over a 15-minute phone call.</p>
-                        <ol>
-                            <li>Click 'Pay Now' and complete the payment.</li>
-                            <li>Send the screenshot to my WhatsApp.</li>
-                            <li>I will call you back for your consultation.</li>
-                        </ol>
-                    </div>
-                    <a href="upi://pay?pa=9410851090-n532@ybl&pn=Advocate%20Vikas%20Yadav&am=100&cu=INR&tn=Legal_Consultation_Call" class="cta-button upi-button">
-                        <i class="fa-solid fa-credit-card"></i> Pay ₹100 Now
-                    </a>
-                </div>
-                <div class="payment-card">
-                    <div>
-                        <h3>Legal Notice Drafting</h3>
-                        <p class="price">₹2000</p>
-                        <p>Professionally drafted legal notice for any issue (property, recovery, etc.).</p>
-                        <ol>
-                            <li>Click 'Pay Now' and complete the payment.</li>
-                            <li>Send the screenshot & case details to my WhatsApp.</li>
-                            <li>Receive your drafted legal notice within 48 hours.</li>
-                        </ol>
-                    </div>
-                    <a href="upi://pay?pa=9410851090-n532@ybl&pn=Advocate%20Vikas%20Yadav&am=2000&cu=INR&tn=Legal_Notice_Drafting" class="cta-button upi-button">
-                        <i class="fa-solid fa-credit-card"></i> Pay ₹2000 Now
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials" class="section testimonial-section">
-            <h2>What My Clients in Etawah Say</h2>
-            <p class="section-intro">My success is measured by my clients' satisfaction and the positive outcomes we achieve together.</p>
-            <div class="testimonial-container">
-                <div class="testimonial-card">
-                    <p>"मेरा ज़मीन का मामला कई सालों से अटका हुआ था। विकास यादव जी ने बहुत ही कम समय में और सही तरीके से केस को सुलझाया। इटावा में इनसे बेहतर वकील नहीं।"</p>
-                    <div class="client-info">
-                        <img src="https://via.placeholder.com/150" alt="Client Photo">
-                        <div>
-                            <div class="client-name">रमेश सिंह</div>
-                            <div class="client-location">फ्रेंड्स कॉलोनी, इटावा</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"I was falsely implicated in a criminal case. Advocate Vikas Yadav's aggressive defense strategy got me bail quickly and eventually led to my acquittal. He is the best criminal lawyer in Etawah."</p>
-                    <div class="client-info">
-                        <img src="https://via.placeholder.com/150" alt="Client Photo">
-                        <div>
-                            <div class="client-name">सुनील कुमार</div>
-                            <div class="client-location">इटावा शहर</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"विकास जी ने मेरे तलाक और मेंटेनेंस के केस को बहुत ही संवेदनशीलता और प्रोफेशनलिज्म के साथ संभाला। उन्होंने मुझे मेरा हक दिलाया। मैं उनकी बहुत आभारी हूँ।"</p>
-                    <div class="client-info">
-                        <img src="https://via.placeholder.com/150" alt="Client Photo">
-                        <div>
-                            <div class="client-name">एक सन्तुष्ट क्लाइंट</div>
-                            <div class="client-location">इटावा</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section contact-section">
-             <h2>Get In Touch</h2>
-             <p class="section-intro">Take the first step towards resolving your legal issue. Contact me for a confidential consultation. Your justice is my priority.</p>
-             <div class="contact-container">
-                <div class="contact-details">
-                    <h3>Advocate Vikas Yadav's Chamber</h3>
-                    <p><i class="fa-solid fa-map-marker-alt"></i> <strong>Address:</strong> [अपना पूरा पता यहाँ लिखें], Etawah, Uttar Pradesh, [पिन कोड]</p>
-                    <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> +91 8979737979</p>
-                    <p><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp:</strong> +91 8979737979</p>
-                    <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> [अपना ईमेल पता यहाँ लिखें]</p>
-                    <p><i class="fa-solid fa-clock"></i> <strong>Office Hours:</strong> Mon - Sat, 10:00 AM - 7:00 PM</p>
-                    
-                    <a href="upi://pay?pa=9410851090-n532@ybl&pn=Advocate%20Vikas%20Yadav&am=&cu=INR&tn=Case_Advance" class="cta-button upi-button" style="width: auto; margin-top: 20px;">
-                        <i class="fa-solid fa-money-check-dollar"></i> Pay Advance / Retainer Fee
-                    </a>
-                </div>
-                 <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113943.8123282291!2d78.93237584335936!3d26.824247400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3975a53a9953255d%3A0x9f3755494390313!2sEtawah%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1692829398123!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                 </div>
-             </div>
-        </section>
-
     </main>
 
     <footer class="footer">
-        <p>© 2025 Advocate Vikas Yadav | All Rights Reserved | Expert Legal Services in Etawah, Uttar Pradesh.</p>
+        <p>© 2025 Lawyermera.com | All Rights Reserved | Your Trusted Legal Partner in Etawah.</p>
     </footer>
 
     <script>
+        // Mobile menu toggle
         function toggleMenu() {
             const nav = document.getElementById('mobile-menu');
             nav.classList.toggle('active');
+        }
+
+        // Lawyer profile slider
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        const slides = document.querySelectorAll('.lawyer-card');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+
+        // Clone slides for infinite loop effect
+        for(let i=0; i < totalSlides; i++){
+            sliderWrapper.appendChild(slides[i].cloneNode(true));
+        }
+
+        function moveSlider(direction) {
+            currentIndex += direction;
+            
+            sliderWrapper.style.transition = 'transform 0.5s ease-in-out';
+            sliderWrapper.style.transform = translateX(-${currentIndex * 100}%);
+
+            if (currentIndex >= totalSlides) {
+                setTimeout(() => {
+                    sliderWrapper.style.transition = 'none';
+                    currentIndex = 0;
+                    sliderWrapper.style.transform = translateX(0%);
+                }, 500);
+            }
+            if (currentIndex < 0) {
+                 setTimeout(() => {
+                    sliderWrapper.style.transition = 'none';
+                    currentIndex = totalSlides - 1;
+                    sliderWrapper.style.transform = translateX(-${currentIndex * 100}%);
+                }, 500);
+            }
         }
     </script>
 
