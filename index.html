@@ -249,6 +249,62 @@
         .footer-col a:hover { color: var(--secondary-color); text-decoration: underline; }
         .footer-bottom { border-top: 1px solid #4a5a6a; padding-top: 20px; text-align: center; font-size: 14px; }
         
+        /* Modal (Pop-up) Styles */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 2000; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.6);
+            animation: fadeIn 0.3s;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 30px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 700px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            position: relative;
+            animation: slideIn 0.4s;
+            text-align: left;
+        }
+        .modal-content h2 {
+            font-family: 'Lora', serif;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+        .modal-content p, .modal-content li {
+            line-height: 1.8;
+            color: var(--light-text-color);
+        }
+        .modal-content ul {
+            padding-left: 20px;
+        }
+        .close-button {
+            color: #aaa;
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: #d63031;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+        @keyframes slideIn { from {transform: translateY(-50px); opacity: 0;} to {transform: translateY(0); opacity: 1;} }
+
         @media (max-width: 992px) {
             .join-us-container, .blog-faq-container { grid-template-columns: 1fr; text-align: center; }
             .blog-faq-container { text-align: left; }
@@ -269,6 +325,7 @@
             .section-title, .hero-content h1, .join-us-content h2 { font-size: 32px; }
             .lawyer-card { flex: 0 0 90%; }
             .services-container-hero { grid-template-columns: 1fr; }
+            .modal-content { width: 90%; margin: 20% auto; }
         }
     </style>
 </head>
@@ -335,7 +392,7 @@
                                     <h4>Court Marriage Help</h4>
                                     <p>Complete assistance for court marriage with police protection.</p>
                                 </div>
-                                <a href="tel:8979737979" class="cta-button">Consult for Marriage</a>
+                                <button id="openMarriageModalBtn" class="cta-button">विस्तार से जानें</button>
                             </div>
                         </div>
                     </div>
@@ -351,25 +408,6 @@
             </div>
             <div class="slider-wrapper">
                 <div class="lawyer-slider">
-                    
-                    <div class="lawyer-card">
-                        <div class="profile-pic-wrapper">
-                            <img src="https://via.placeholder.com/120/3A506B/fca311?text=VY" alt="Advocate Vikas Yadav" loading="lazy">
-                        </div>
-                        <h3>Advocate Vikas Yadav <i class="fa-solid fa-circle-check verified-badge"></i></h3>
-                        <div class="experience-location">
-                            <span class="experience"><i class="fa-solid fa-briefcase"></i> 12+ Yrs Exp.</span>
-                            <span class="location"><i class="fa-solid fa-location-dot"></i> Etawah, U.P.</span>
-                        </div>
-                        <p>Top criminal lawyer in Etawah with high success rate in bail and complex family law cases.</p>
-                        <div class="specialization-tags">
-                            <span>Criminal Law</span> <span>Family Law</span> <span>Bail Matters</span>
-                        </div>
-                        <div class="card-buttons">
-                            <a href="tel:8979737979" class="cta-button"><i class="fa-solid fa-phone"></i> Call Now</a>
-                            <a href="#" class="cta-button secondary">View Profile</a>
-                        </div>
-                    </div>
 
                     <div class="lawyer-card">
                         <div class="profile-pic-wrapper">
@@ -386,7 +424,7 @@
                         </div>
                         <div class="card-buttons">
                              <a href="tel:8979737979" class="cta-button"><i class="fa-solid fa-phone"></i> Call Now</a>
-                            <a href="#" class="cta-button secondary">View Profile</a>
+                            <a href="https://wa.me/918979737979?text=Hello%20Lawyermera.%20I%20am%20interested%20in%20your%20legal%20services.%20Please%20connect%20me%20with%20an%20expert%20advocate." class="cta-button secondary">View Profile</a>
                         </div>
                     </div>
 
@@ -405,7 +443,7 @@
                         </div>
                          <div class="card-buttons">
                              <a href="tel:8979737979" class="cta-button"><i class="fa-solid fa-phone"></i> Call Now</a>
-                            <a href="#" class="cta-button secondary">View Profile</a>
+                            <a href="https://wa.me/918979737979?text=Hello%20Lawyermera.%20I%20am%20interested%20in%20your%20legal%20services.%20Please%20connect%20me%20with%20an%20expert%20advocate." class="cta-button secondary">View Profile</a>
                         </div>
                     </div>
 
@@ -424,7 +462,7 @@
                         </div>
                         <div class="card-buttons">
                              <a href="tel:8979737979" class="cta-button"><i class="fa-solid fa-phone"></i> Call Now</a>
-                            <a href="#" class="cta-button secondary">View Profile</a>
+                            <a href="https://wa.me/918979737979?text=Hello%20Lawyermera.%20I%20am%20interested%20in%20your%20legal%20services.%20Please%20connect%20me%20with%20an%20expert%20advocate." class="cta-button secondary">View Profile</a>
                         </div>
                     </div>
                     
@@ -443,7 +481,7 @@
                         </div>
                          <div class="card-buttons">
                              <a href="tel:8979737979" class="cta-button"><i class="fa-solid fa-phone"></i> Call Now</a>
-                            <a href="#" class="cta-button secondary">View Profile</a>
+                            <a href="https://wa.me/918979737979?text=Hello%20Lawyermera.%20I%20am%20interested%20in%20your%20legal%20services.%20Please%20connect%20me%20with%20an%20expert%20advocate." class="cta-button secondary">View Profile</a>
                         </div>
                     </div>
 
@@ -462,7 +500,7 @@
                         </div>
                          <div class="card-buttons">
                              <a href="tel:8979737979" class="cta-button"><i class="fa-solid fa-phone"></i> Call Now</a>
-                            <a href="#" class="cta-button secondary">View Profile</a>
+                            <a href="https://wa.me/918979737979?text=Hello%20Lawyermera.%20I%20am%20interested%20in%20your%20legal%20services.%20Please%20connect%20me%20with%20an%20expert%20advocate." class="cta-button secondary">View Profile</a>
                         </div>
                     </div>
 
@@ -492,7 +530,7 @@
                     <div class="service-card">
                         <i class="fa-solid fa-ring"></i><h3>Court Marriage Assistance</h3>
                         <p>Get complete assistance for court marriage with <strong>High Court and police protection</strong>. Service available in Etawah, Mainpuri, Auraiya, Etah, Kanpur & Agra. / <strong>हाईकोर्ट और पुलिस सुरक्षा</strong> के साथ कोर्ट मैरिज के लिए पूरी सहायता प्राप्त करें।</p>
-                        <a href="tel:8979737979" class="cta-button" style="margin-top: 20px;">Consult for Marriage</a>
+                        <button id="openMarriageModalBtn2" class="cta-button" style="margin-top: 20px;">पूरी प्रक्रिया जानें</button>
                     </div>
                 </div>
             </div>
@@ -573,7 +611,6 @@
                 <p>Lawyermera.com is India's premier legal platform, designed to connect clients with the best lawyers. Our mission is to make expert legal services accessible for everyone.</p>
                 <br>
                 <p><i class="fa-solid fa-map-marker-alt"></i> District Court Campus, Etawah, Uttar Pradesh, 206001</p>
-                <p><i class="fa-solid fa-phone"></i> <a href="tel:8979737979">+91 89797 37979</a></p>
                 <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/918979737979">+91 89797 37979</a></p>
             </div>
             <div class="footer-col">
@@ -591,6 +628,34 @@
             <p>© 2025 Lawyermera.com | All Rights Reserved | Your Trusted Legal Partner in India.</p>
         </div>
     </footer>
+
+    <div id="marriageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>हाईकोर्ट के माध्यम से कोर्ट मैरिज और पुलिस सुरक्षा</h2>
+            <p>जब कोई वयस्क जोड़ा अपनी मर्ज़ी से शादी करना चाहता है, लेकिन उन्हें अपने परिवार या समाज से किसी प्रकार का खतरा महसूस होता है, तो वे सीधे माननीय हाईकोर्ट की शरण में जा सकते हैं। यह प्रक्रिया उन्हें कानूनी रूप से विवाह करने और साथ ही अपनी सुरक्षा सुनिश्चित करने का अधिकार देती है।</p>
+            
+            <h4>पुलिस सुरक्षा क्यों और कैसे मिलती है?</h4>
+            <p>भारतीय संविधान का अनुच्छेद 21 सभी नागरिकों को "जीवन और व्यक्तिगत स्वतंत्रता का अधिकार" देता है। जब कोई जोड़ा अपनी पसंद से विवाह करता है, तो यह उनका मौलिक अधिकार है। यदि उन्हें इस अधिकार का प्रयोग करने से रोका जाता है या धमकी दी जाती है, तो हाईकोर्ट उनकी सुरक्षा के लिए पुलिस को निर्देश जारी कर सकता है।</p>
+            <ul>
+                <li><strong>याचिका दायर करना:</strong> एक वकील के माध्यम से हाईकोर्ट में एक रिट याचिका (Writ Petition) दायर की जाती है, जिसमें विवाह करने के अधिकार और संभावित खतरों का उल्लेख होता है।</li>
+                <li><strong>हाईकोर्ट का आदेश:</strong> मामले की गंभीरता को देखते हुए, हाईकोर्ट तुरंत संबंधित जिले के पुलिस अधीक्षक (SP) और थाना अध्यक्ष (SHO) को जोड़े को तत्काल सुरक्षा प्रदान करने का आदेश देता है।</li>
+                <li><strong>सुरक्षा का स्तर:</strong> यह सुरक्षा उन्हें उनके घर पर, यात्रा के दौरान और विवाह पंजीकरण प्रक्रिया के समय दी जाती है ताकि कोई उन्हें परेशान न कर सके।</li>
+            </ul>
+
+            <h4>हाईकोर्ट से सुरक्षा सबसे ज़्यादा प्रभावी क्यों है?</h4>
+            <p><strong>सीधा और सर्वोच्च आदेश:</strong> हाईकोर्ट राज्य की सबसे बड़ी अदालत होती है। इसका आदेश पुलिस और प्रशासन के लिए बाध्यकारी होता है। स्थानीय दबाव या प्रभाव पुलिस को हाईकोर्ट के आदेश की अवहेलना करने से रोकता है। इसलिए, यह माना जाता है कि <strong>सबसे ज्यादा और प्रभावी सुरक्षा हाईकोर्ट के आदेश से ही मिलती है।</strong></p>
+            
+            <h4>आवश्यक दस्तावेज़:</h4>
+            <ul>
+                <li>लड़का और लड़की दोनों के आयु प्रमाण पत्र (जैसे 10वीं की मार्कशीट, जन्म प्रमाण पत्र)।</li>
+                <li>दोनों के निवास प्रमाण पत्र (आधार कार्ड, वोटर आईडी)।</li>
+                <li>पहचान पत्र और पासपोर्ट साइज फोटो।</li>
+            </ul>
+            <p>यह प्रक्रिया उन जोड़ों के लिए एक बहुत शक्तिशाली कानूनी उपाय है जो बिना किसी डर के एक साथ अपना जीवन शुरू करना चाहते हैं।</p>
+        </div>
+    </div>
+
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -676,20 +741,19 @@
             const selectedCity = citySelect.value;
             const selectedState = stateSelect.value;
             if (selectedCity && selectedState) {
-                const newTitle = Best Lawyers in ${selectedCity} | Find Advocates in ${selectedCity}, ${selectedState};
+                const newTitle = `Best Lawyers in ${selectedCity} | Find Advocates in ${selectedCity}, ${selectedState}`;
                 document.title = newTitle;
-                alert(Title changed to: "${newTitle}" \n(Normally you would be redirected to a new page));
+                alert(`Title changed to: "${newTitle}" \n(Normally you would be redirected to a new page)`);
             } else {
                 alert("Please select a state and a city first.");
             }
         });
-
+        
         // ▼▼▼ यह कोड लॉयर स्लाइडर के लिए डॉट्स बनाता है ▼▼▼
         const slider = document.querySelector('.lawyer-slider');
         const dotsContainer = document.querySelector('.slider-dots');
         if (slider && dotsContainer) {
             const slides = Array.from(slider.children);
-            // हर लॉयर कार्ड के लिए एक डॉट बनाया जाता है
             slides.forEach((slide, index) => {
                 const dot = document.createElement('button');
                 dot.classList.add('dot');
@@ -700,18 +764,36 @@
                 dotsContainer.appendChild(dot);
             });
             const dots = Array.from(dotsContainer.children);
-            // स्क्रॉल करने पर सही डॉट को एक्टिवेट (highlight) करने का कोड
             const sliderObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const index = slides.indexOf(entry.target);
                         dots.forEach(dot => dot.classList.remove('active'));
-                        dots[index].classList.add('active');
+                        if(dots[index]) dots[index].classList.add('active');
                     }
                 });
             }, { root: slider, threshold: 0.6 });
             slides.forEach(slide => sliderObserver.observe(slide));
         }
+
+        // ▼▼▼ यह कोड पॉप-अप (Modal) के लिए है ▼▼▼
+        const modal = document.getElementById('marriageModal');
+        const openBtn1 = document.getElementById('openMarriageModalBtn');
+        const openBtn2 = document.getElementById('openMarriageModalBtn2');
+        const closeBtn = document.querySelector('.close-button');
+
+        const openModal = () => { modal.style.display = 'block'; };
+        const closeModal = () => { modal.style.display = 'none'; };
+
+        if(openBtn1) openBtn1.onclick = openModal;
+        if(openBtn2) openBtn2.onclick = openModal;
+        if(closeBtn) closeBtn.onclick = closeModal;
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        };
     });
     </script>
 
