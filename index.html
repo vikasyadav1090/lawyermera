@@ -4,212 +4,321 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Lawyer in Etawah | Criminal & Civil Advocate – LAWYERmera</title>
-<meta name="description" content="Find genuine lawyers in Etawah and other UP cities. Criminal, civil and family advocates. First consultation free.">
+<title>Lawyer in Etawah | Free Legal Advice – LAWYERmera</title>
+<meta name="description" content="Mobile friendly legal help. Connect with verified advocates in Etawah & UP cities. Free legal advice. 50% fee waiver.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://lawyermera.com/">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Poppins,sans-serif;background:#f4f6f8}
-header{background:#1a2a6c;color:#fff;padding:15px;text-align:center}
-
-.city-bar{text-align:center;background:#fff;padding:15px}
-.city-bar a{
- margin:6px;padding:10px 18px;border:1px solid #1a2a6c;
- border-radius:20px;text-decoration:none;color:#1a2a6c;font-weight:600
+:root{
+ --primary:#0f1e3a;
+ --gold:#c9a24d;
+ --bg:#f4f6fb;
+ --card:#ffffff;
 }
-.city-bar a.active,.city-bar a:hover{background:#1a2a6c;color:#fff}
 
-.container{padding:20px}
-.main-wrap{display:flex;gap:25px;align-items:flex-start}
+*{box-sizing:border-box}
 
-.list-area{flex:2}
-.form-area{flex:1;position:sticky;top:100px}
+body{
+ margin:0;
+ font-family:Poppins,sans-serif;
+ background:var(--bg);
+ color:#222;
+}
 
+/* ===== HERO ===== */
+.hero{
+ background:linear-gradient(135deg,#0f1e3a,#1f3c88);
+ color:#fff;
+ padding:26px 16px;
+ text-align:center;
+}
+
+.hero h1{
+ font-size:24px;
+ margin:0 0 6px;
+}
+
+.hero p{
+ font-size:13px;
+ opacity:.9;
+}
+
+.hero span{
+ display:inline-block;
+ margin-top:8px;
+ padding:5px 12px;
+ background:rgba(255,255,255,.18);
+ border-radius:20px;
+ font-size:12px;
+}
+
+/* ===== CITY BAR (MOBILE SCROLL) ===== */
+.city-bar{
+ display:flex;
+ gap:8px;
+ padding:12px;
+ overflow-x:auto;
+ background:#fff;
+}
+
+.city-bar a{
+ flex:0 0 auto;
+ padding:8px 14px;
+ border-radius:18px;
+ border:1px solid #ddd;
+ text-decoration:none;
+ color:var(--primary);
+ font-weight:600;
+ font-size:13px;
+}
+
+.city-bar a.active{
+ background:var(--primary);
+ color:#fff;
+ border-color:var(--primary);
+}
+
+/* ===== LAYOUT ===== */
+.container{
+ padding:14px;
+}
+
+/* ===== ADVOCATE CARD ===== */
 .card{
- background:#fff;padding:20px;border:1px solid #ddd;
- border-radius:4px;margin-bottom:18px;
- box-shadow:0 2px 6px rgba(0,0,0,0.06)
+ background:#fff;
+ padding:14px;
+ border-radius:10px;
+ margin-bottom:14px;
+ box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+
+.card h3{
+ font-size:15px;
+ margin:8px 0 4px;
+ color:var(--primary);
 }
 
 .badge{
- background:#e3f2fd;color:#0d47a1;
- padding:4px 8px;font-size:12px;display:inline-block
+ font-size:11px;
+ padding:3px 8px;
+ background:#e8f0fe;
+ color:#1a3dd6;
+ border-radius:12px;
 }
 
 .popular{
- background:#fff3cd;color:#856404;
- padding:4px 8px;font-size:12px;font-weight:600;
- margin-left:6px;border:1px solid #ffeeba
+ font-size:11px;
+ padding:3px 8px;
+ background:#fff4d1;
+ color:#8a6d1d;
+ border-radius:12px;
+ margin-left:6px;
 }
 
-.actions{display:flex;gap:10px;margin-top:10px}
-.call-btn,.wa-btn{
- flex:1;text-align:center;padding:10px;
- border-radius:4px;text-decoration:none;
- font-weight:600;color:#fff
+/* ===== ACTION BUTTONS ===== */
+.actions{
+ margin-top:10px;
+ display:flex;
+ flex-direction:column;
+ gap:8px;
 }
-.call-btn{background:#1976d2}
+
+.call-btn,
+.wa-btn{
+ text-align:center;
+ padding:12px;
+ border-radius:22px;
+ font-weight:600;
+ color:#fff;
+ text-decoration:none;
+ font-size:14px;
+}
+
+.call-btn{background:#1f3c88}
 .wa-btn{background:#25d366}
 
+/* ===== FREE BOX ===== */
 .free-box{
- background:#fff;border:2px solid #b8860b;
- padding:20px;border-radius:6px
+ background:#fff;
+ margin-top:18px;
+ padding:16px;
+ border-radius:12px;
+ box-shadow:0 6px 20px rgba(0,0,0,.1);
 }
-.free-box h3{margin-top:0;color:#1a2a6c}
-.free-box input,.free-box select,.free-box textarea{
- width:100%;padding:10px;margin-bottom:10px;
- border:1px solid #ccc;border-radius:4px
+
+.free-box h3{
+ margin:0 0 8px;
+ color:var(--primary);
+ font-size:17px;
 }
+
+.free-box input,
+.free-box select,
+.free-box textarea{
+ width:100%;
+ padding:12px;
+ margin-bottom:10px;
+ border-radius:8px;
+ border:1px solid #ccc;
+ font-size:14px;
+}
+
 .free-box button{
- background:#b8860b;color:#fff;border:none;
- padding:12px;width:100%;font-weight:bold
+ width:100%;
+ padding:14px;
+ background:var(--gold);
+ border:none;
+ border-radius:26px;
+ font-weight:700;
+ color:#fff;
+ font-size:15px;
 }
+
 .offer{
- background:#e8f5e9;color:#1b5e20;
- padding:10px;font-size:13px;border-left:4px solid #2e7d32
+ margin-top:10px;
+ background:#eaf7ee;
+ color:#256029;
+ padding:10px;
+ border-radius:8px;
+ font-size:13px;
 }
-footer{background:#111;color:#ccc;text-align:center;padding:15px;font-size:13px}
+
+/* ===== DESKTOP IMPROVEMENT ===== */
+@media(min-width:900px){
+ .container{max-width:1200px;margin:auto}
+ .main-wrap{display:flex;gap:26px}
+ .list-area{flex:2}
+ .form-area{flex:1;position:sticky;top:80px}
+ .actions{flex-direction:row}
+}
 </style>
 </head>
 
 <body>
 
-<header>
-<h1 id="pageH1">Lawyer in Etawah</h1>
-<p>Criminal | Civil | Family Law</p>
-</header>
+<!-- HERO -->
+<div class="hero">
+  <h1 id="pageH1">Lawyer in Etawah</h1>
+  <p>Criminal • Civil • Family Law</p>
+  <span>✔ Verified Advocates • Free Legal Advice</span>
+</div>
 
+<!-- CITY BAR -->
 <div class="city-bar">
-<a href="?city=etawah">Etawah</a>
-<a href="?city=kanpur">Kanpur</a>
-<a href="?city=agra">Agra</a>
-<a href="?city=mainpuri">Mainpuri</a>
-<a href="?city=auraiya">Auraiya</a>
-<a href="?city=firozabad">Firozabad</a>
-<a href="?city=lucknow">Lucknow</a>
+ <a href="?city=etawah">Etawah</a>
+ <a href="?city=kanpur">Kanpur</a>
+ <a href="?city=agra">Agra</a>
+ <a href="?city=mainpuri">Mainpuri</a>
+ <a href="?city=auraiya">Auraiya</a>
+ <a href="?city=firozabad">Firozabad</a>
+ <a href="?city=lucknow">Lucknow</a>
 </div>
 
 <div class="container main-wrap">
 
+<!-- LEFT -->
 <div class="list-area">
-<div class="card" id="seoContent"></div>
-<div id="lawyerList"></div>
+ <div id="lawyerList"></div>
 </div>
 
+<!-- RIGHT / BOTTOM ON MOBILE -->
 <div class="form-area">
-<div class="free-box">
-<h3>Free Legal Advice</h3>
-<p>Expert vakil se connect karne ke liye form bharein.</p>
+ <div class="free-box">
+  <h3>Free Legal Advice</h3>
 
-<input id="fname" placeholder="Aapka Naam">
-<input id="fphone" placeholder="Mobile Number">
-<select id="fcity">
-<option>Etawah</option><option>Kanpur</option><option>Agra</option>
-<option>Mainpuri</option><option>Auraiya</option>
-<option>Firozabad</option><option>Lucknow</option>
-</select>
-<textarea rows="3" placeholder="Apni kanooni samasya batayein..."></textarea>
+  <input id="fname" placeholder="Aapka Naam">
+  <input id="fphone" placeholder="Mobile Number">
+  <select id="fcity">
+   <option>Etawah</option><option>Kanpur</option><option>Agra</option>
+   <option>Mainpuri</option><option>Auraiya</option>
+   <option>Firozabad</option><option>Lucknow</option>
+  </select>
+  <textarea rows="3" placeholder="Apni kanooni samasya batayein..."></textarea>
 
-<button onclick="sendFreeWA()">WhatsApp Par Connect Karein</button>
+  <button onclick="sendWA()">WhatsApp Par Connect Karein</button>
 
-<div class="offer">
-🎉 <b>Special Offer:</b><br>
-Is form se aane wale clients ki<br>
-<b>fees 50% maaf</b> rahegi.
-</div>
-</div>
+  <div class="offer">
+   🎉 Is form se aane wale client ki  
+   <b>fees 50% maaf</b> rahegi
+  </div>
+ </div>
 </div>
 
 </div>
-
-<footer>
-<p>Disclaimer: LAWYERmera koi law firm nahi hai. Yeh platform sirf legal information aur advocate connection ke liye hai.</p>
-</footer>
 
 <script>
 const DEFAULT_CITY="etawah";
 const DEFAULT_PHONE="9458005707";
 
 const cityData={
- etawah:{
-  h1:"Lawyer in Etawah",
-  seo:"Etawah ke real aur genuine advocates criminal, civil aur family court matters me madad karte hain.",
-  lawyers:[
-   {n:"Advocate Vikas Yadav",a:"Criminal & Civil Law",p:"8979737979"},
-   {n:"Advocate Saurabh Yadav",a:"Criminal Law",p:"8923925757"},
-   {n:"Advocate Faizan Ali",a:"Criminal Defence",p:DEFAULT_PHONE},
-   {n:"Advocate Nidhi Singh",a:"Family & Civil Law",p:DEFAULT_PHONE},
-   {n:"Advocate Sagar Tiwari",a:"Civil & Property Law",p:DEFAULT_PHONE}
-  ]
- },
- kanpur:{h1:"Lawyer in Kanpur",seo:"Kanpur ke experienced advocates.",lawyers:[
-  {n:"Adv. Satyendra Yadav",a:"Criminal Law",p:DEFAULT_PHONE},
-  {n:"Adv. Rakesh Mishra",a:"Civil Law",p:DEFAULT_PHONE},
-  {n:"Adv. Neha Tripathi",a:"Family Law",p:DEFAULT_PHONE},
-  {n:"Adv. Amit Verma",a:"Property Law",p:DEFAULT_PHONE},
-  {n:"Adv. Irfan Khan",a:"High Court Matters",p:DEFAULT_PHONE}
- ]},
- agra:{h1:"Advocate in Agra",seo:"Agra ke trusted advocates.",lawyers:[
-  {n:"Adv. Vivek Sharma",a:"Civil & Family Law",p:DEFAULT_PHONE},
-  {n:"Adv. Pankaj Goyal",a:"Criminal Law",p:DEFAULT_PHONE},
-  {n:"Adv. Shalini Gupta",a:"Family Law",p:DEFAULT_PHONE},
-  {n:"Adv. Nadeem Ansari",a:"Criminal Defence",p:DEFAULT_PHONE},
-  {n:"Adv. Rahul Chauhan",a:"Property Disputes",p:DEFAULT_PHONE}
- ]},
- mainpuri:{h1:"Advocate in Mainpuri",seo:"Mainpuri ke advocates.",lawyers:[
-  {n:"Adv. Harish Chandra",a:"Criminal Law",p:DEFAULT_PHONE},
-  {n:"Adv. Kavita Singh",a:"Family Law",p:DEFAULT_PHONE},
-  {n:"Adv. Rohit Yadav",a:"Civil Litigation",p:DEFAULT_PHONE},
-  {n:"Adv. Shakeel Ahmad",a:"Criminal Defence",p:DEFAULT_PHONE},
-  {n:"Adv. Sanjeev Verma",a:"Property Law",p:DEFAULT_PHONE}
- ]},
- auraiya:{h1:"Lawyer in Auraiya",seo:"Auraiya ke advocates.",lawyers:[
-  {n:"Adv. Rajesh Tiwari",a:"Civil Law",p:DEFAULT_PHONE},
-  {n:"Adv. Dinesh Yadav",a:"Criminal Law",p:DEFAULT_PHONE},
-  {n:"Adv. Pooja Mishra",a:"Family Law",p:DEFAULT_PHONE},
-  {n:"Adv. Salman Khan",a:"Criminal Defence",p:DEFAULT_PHONE},
-  {n:"Adv. Anil Verma",a:"Property Matters",p:DEFAULT_PHONE}
- ]},
- firozabad:{h1:"Advocate in Firozabad",seo:"Firozabad ke advocates.",lawyers:[
-  {n:"Adv. Haris Beg",a:"High Court Matters",p:DEFAULT_PHONE},
-  {n:"Adv. Saurabh Jain",a:"Civil Law",p:DEFAULT_PHONE},
-  {n:"Adv. Nazia Khan",a:"Family Law",p:DEFAULT_PHONE},
-  {n:"Adv. Deepak Singh",a:"Criminal Defence",p:DEFAULT_PHONE},
-  {n:"Adv. Mohit Agarwal",a:"Cheque Bounce Cases",p:DEFAULT_PHONE}
- ]},
- lucknow:{h1:"Lawyer in Lucknow",seo:"Lucknow High Court advocates.",lawyers:[
-  {n:"Adv. Abhishek Mishra",a:"High Court & Criminal Law",p:DEFAULT_PHONE},
-  {n:"Adv. Ritu Srivastava",a:"Family & Divorce Law",p:DEFAULT_PHONE},
-  {n:"Adv. Mohd. Aslam",a:"Criminal Defence",p:DEFAULT_PHONE},
-  {n:"Adv. Ankit Verma",a:"Civil & Service Matters",p:DEFAULT_PHONE},
-  {n:"Adv. Pankhuri Singh",a:"Women & Family Law",p:DEFAULT_PHONE}
- ]}
+ etawah:[
+  {n:"Advocate Vikas Yadav",p:"8979737979"},
+  {n:"Advocate Saurabh Yadav",p:"8923925757"},
+  {n:"Advocate Faizan Ali",p:DEFAULT_PHONE},
+  {n:"Advocate Nidhi Singh",p:DEFAULT_PHONE},
+  {n:"Advocate Sagar Tiwari",p:DEFAULT_PHONE}
+ ],
+ kanpur:[
+  {n:"Adv. Satyendra Yadav",p:DEFAULT_PHONE},
+  {n:"Adv. Rakesh Mishra",p:DEFAULT_PHONE},
+  {n:"Adv. Neha Tripathi",p:DEFAULT_PHONE},
+  {n:"Adv. Amit Verma",p:DEFAULT_PHONE},
+  {n:"Adv. Irfan Khan",p:DEFAULT_PHONE}
+ ],
+ agra:[
+  {n:"Adv. Vivek Sharma",p:DEFAULT_PHONE},
+  {n:"Adv. Pankaj Goyal",p:DEFAULT_PHONE},
+  {n:"Adv. Shalini Gupta",p:DEFAULT_PHONE},
+  {n:"Adv. Nadeem Ansari",p:DEFAULT_PHONE},
+  {n:"Adv. Rahul Chauhan",p:DEFAULT_PHONE}
+ ],
+ mainpuri:[
+  {n:"Adv. Harish Chandra",p:DEFAULT_PHONE},
+  {n:"Adv. Kavita Singh",p:DEFAULT_PHONE},
+  {n:"Adv. Rohit Yadav",p:DEFAULT_PHONE},
+  {n:"Adv. Shakeel Ahmad",p:DEFAULT_PHONE},
+  {n:"Adv. Sanjeev Verma",p:DEFAULT_PHONE}
+ ],
+ auraiya:[
+  {n:"Adv. Rajesh Tiwari",p:DEFAULT_PHONE},
+  {n:"Adv. Dinesh Yadav",p:DEFAULT_PHONE},
+  {n:"Adv. Pooja Mishra",p:DEFAULT_PHONE},
+  {n:"Adv. Salman Khan",p:DEFAULT_PHONE},
+  {n:"Adv. Anil Verma",p:DEFAULT_PHONE}
+ ],
+ firozabad:[
+  {n:"Adv. Haris Beg",p:DEFAULT_PHONE},
+  {n:"Adv. Saurabh Jain",p:DEFAULT_PHONE},
+  {n:"Adv. Nazia Khan",p:DEFAULT_PHONE},
+  {n:"Adv. Deepak Singh",p:DEFAULT_PHONE},
+  {n:"Adv. Mohit Agarwal",p:DEFAULT_PHONE}
+ ],
+ lucknow:[
+  {n:"Adv. Abhishek Mishra",p:DEFAULT_PHONE},
+  {n:"Adv. Ritu Srivastava",p:DEFAULT_PHONE},
+  {n:"Adv. Mohd. Aslam",p:DEFAULT_PHONE},
+  {n:"Adv. Ankit Verma",p:DEFAULT_PHONE},
+  {n:"Adv. Pankhuri Singh",p:DEFAULT_PHONE}
+ ]
 };
 
 function loadCity(){
- const params=new URLSearchParams(window.location.search);
- let city=params.get("city");
- if(!city||!cityData[city]) city=DEFAULT_CITY;
-
- document.getElementById("pageH1").innerText=cityData[city].h1;
- document.getElementById("seoContent").innerHTML=cityData[city].seo;
+ const params=new URLSearchParams(location.search);
+ let city=params.get("city")||DEFAULT_CITY;
+ if(!cityData[city]) city=DEFAULT_CITY;
 
  let html="";
- cityData[city].lawyers.forEach((l,i)=>{
-  const popular=i<2?'<span class="popular">⭐ Popular Advocate</span>':'';
+ cityData[city].forEach((l,i)=>{
+  const popular=i<2?'<span class="popular">⭐ Popular</span>':'';
   html+=`
   <div class="card">
-   <span class="badge">✔ Verified Advocate</span> ${popular}
+   <span class="badge">✔ Verified</span> ${popular}
    <h3>${l.n}</h3>
-   <p><b>Practice Area:</b> ${l.a}</p>
    <div class="actions">
     <a class="call-btn" href="tel:${l.p}">📞 Call</a>
-    <a class="wa-btn" target="_blank"
-     href="https://wa.me/91${l.p}?text=Hello ${l.n}, I found you on LAWYERmera">
-     💬 WhatsApp</a>
+    <a class="wa-btn" href="https://wa.me/91${l.p}" target="_blank">💬 WhatsApp</a>
    </div>
   </div>`;
  });
@@ -221,9 +330,9 @@ function loadCity(){
 }
 loadCity();
 
-function sendFreeWA(){
+function sendWA(){
  const msg=encodeURIComponent(
-  "Free Legal Advice Enquiry\nName:"+fname.value+
+  "Free Legal Advice\nName:"+fname.value+
   "\nPhone:"+fphone.value+
   "\nCity:"+fcity.value+
   "\nOffer:50% Fee Waiver"
