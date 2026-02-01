@@ -1,589 +1,217 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UP-Legal Directory | Top Verified Advocates</title>
+    <meta name="description" content="Find Top 5 Advocates in Lucknow, Agra, Kanpur, Mainpuri, Firozabad. Verified Legal Directory.">
     
-    <title>Legal Etawah | Adv. Vikas Yadav & Adv. Saurabh Yadav | Same Day Bail</title>
-    <meta name="description" content="Legal Etawah: Expert legal defense by Adv. Vikas Yadav & Adv. Saurabh Yadav. Specializing in Same Day Bail, Court Marriage, and Criminal Defense in Etawah District Court.">
-    <meta name="keywords" content="Advocate in Etawah, Best Lawyer Etawah, Same Day Bail Etawah, Court Marriage Etawah, Adv Vikas Yadav, Adv Saurabh Yadav, Etawah Court">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LegalService",
-      "name": "Legal Etawah",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Etawah",
-        "addressRegion": "UP",
-        "postalCode": "206001",
-        "addressCountry": "IN"
-      },
-      "telephone": "+918979737979",
-      "priceRange": "$$"
-    }
-    </script>
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@300;600;900&display=swap');
-        
-        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
-        .heading-font { font-family: 'Outfit', sans-serif; }
-        
-        /* Clean & Decent Styles */
-        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid #e2e8f0; }
-        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-        .fomo-banner { background: #be123c; animation: slideIn 0.5s ease-out; }
-        
-        .profile-card { background: #ffffff; border: 1px solid #e2e8f0; transition: transform 0.3s; }
-        .profile-card:hover { transform: translateY(-5px); }
-        
-        @keyframes pulse-red {
-            0% { box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.4); }
-            70% { box-shadow: 0 0 0 10px rgba(225, 29, 72, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(225, 29, 72, 0); }
-        }
-        .urgent-btn { animation: pulse-red 2s infinite; }
+        body { font-family: 'Outfit', sans-serif; background: #f8fafc; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .glass-header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e7eb; }
+        .hover-lift { transition: transform 0.2s; }
+        .hover-lift:hover { transform: translateY(-5px); }
     </style>
 </head>
-<body class="bg-slate-50">
+<body class="text-slate-800 flex flex-col min-h-screen">
 
-    <nav class="glass-nav fixed top-0 left-0 right-0 z-[1000] px-5 py-3 flex justify-between items-center">
-        <div class="flex items-center gap-2">
-            <div class="bg-slate-900 p-2 rounded-lg text-white">
-                <i class="fa fa-scale-balanced text-sm"></i>
-            </div>
-            <div class="flex flex-col">
-                <span class="heading-font font-[900] text-[16px] tracking-tight leading-none uppercase">LEGAL <span class="text-rose-600">ETAWAH</span></span>
-                <span class="text-[7px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">District Court Campus</span>
-            </div>
+    <nav class="sticky top-0 z-50 glass-header px-6 py-4 flex justify-between items-center shadow-sm">
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-balance-scale text-orange-600 text-2xl"></i>
+            <span class="text-xl font-black text-indigo-950 tracking-tighter">UP-LEGAL<span class="text-orange-600"> DIRECTORY</span></span>
         </div>
-        <div class="flex items-center gap-3">
-            <a href="tel:8979737979" class="text-slate-900 text-lg"><i class="fa-solid fa-phone-volume"></i></a>
-            <div class="h-6 w-[1px] bg-slate-200"></div>
-            <button class="text-slate-500"><i class="fa fa-bars-staggered"></i></button>
+        <div class="relative group">
+            <button class="w-10 h-10 rounded-full hover:bg-slate-100 flex items-center justify-center">
+                <i class="fas fa-bars text-xl text-indigo-950"></i>
+            </button>
+            <div class="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-2xl border border-slate-100 hidden group-hover:block transition-all p-2 z-50">
+                <a href="about.html" class="block px-4 py-3 hover:bg-orange-50 rounded-lg text-sm font-bold text-slate-700">About Us</a>
+                <a href="services.html" class="block px-4 py-3 hover:bg-orange-50 rounded-lg text-sm font-bold text-slate-700">Services</a>
+                <a href="login.html" class="block px-4 py-3 hover:bg-orange-50 rounded-lg text-sm font-bold text-slate-700">Advocate Login</a>
+            </div>
         </div>
     </nav>
 
-    <div class="mt-[60px] fomo-banner text-white py-2 px-4 overflow-hidden whitespace-nowrap">
-        <p class="text-[9px] font-bold uppercase tracking-widest flex items-center gap-4">
-            <span><i class="fa fa-circle-exclamation mr-1"></i> URGENT: Same Day Bail & Arrest Prevention. Call Now!</span>
-            <span class="opacity-50">|</span>
-            <span><i class="fa fa-clock mr-1"></i> Court Marriage Registration available daily.</span>
-        </p>
+    <header class="bg-indigo-950 text-white pt-10 pb-16 px-6 text-center relative overflow-hidden rounded-b-[40px]">
+        <div class="relative z-10">
+            <span class="bg-orange-500/20 border border-orange-500 text-orange-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Only Top 5 Per City</span>
+            <h1 class="text-3xl font-black mt-4 mb-2">Find Best Lawyer in <span id="city-name-display" class="text-orange-500 underline decoration-2 underline-offset-4">Lucknow</span></h1>
+            <p class="text-slate-300 text-sm font-light max-w-md mx-auto">"Guaranteed Verified Experts. Superior Defense."</p>
+        </div>
+    </header>
+
+    <div class="px-4 -mt-8 relative z-20 mb-8">
+        <div class="flex space-x-3 overflow-x-auto no-scrollbar py-3">
+            <button onclick="filterList('Lucknow')" class="bg-white text-indigo-950 border border-slate-200 px-6 py-3 rounded-2xl font-bold text-sm shadow-lg whitespace-nowrap hover:bg-indigo-950 hover:text-white transition-colors">Lucknow</button>
+            <button onclick="filterList('Kanpur')" class="bg-white text-indigo-950 border border-slate-200 px-6 py-3 rounded-2xl font-bold text-sm shadow-lg whitespace-nowrap hover:bg-indigo-950 hover:text-white transition-colors">Kanpur</button>
+            <button onclick="filterList('Etawah')" class="bg-white text-indigo-950 border border-slate-200 px-6 py-3 rounded-2xl font-bold text-sm shadow-lg whitespace-nowrap hover:bg-indigo-950 hover:text-white transition-colors">Etawah</button>
+            <button onclick="filterList('Mainpuri')" class="bg-white text-indigo-950 border border-slate-200 px-6 py-3 rounded-2xl font-bold text-sm shadow-lg whitespace-nowrap hover:bg-indigo-950 hover:text-white transition-colors">Mainpuri</button>
+            <button onclick="filterList('Agra')" class="bg-white text-indigo-950 border border-slate-200 px-6 py-3 rounded-2xl font-bold text-sm shadow-lg whitespace-nowrap hover:bg-indigo-950 hover:text-white transition-colors">Agra</button>
+            <button onclick="filterList('Firozabad')" class="bg-white text-indigo-950 border border-slate-200 px-6 py-3 rounded-2xl font-bold text-sm shadow-lg whitespace-nowrap hover:bg-indigo-950 hover:text-white transition-colors">Firozabad</button>
+            <button onclick="filterList('Auraiya')" class="bg-white text-indigo-950 border border-slate-200 px-6 py-3 rounded-2xl font-bold text-sm shadow-lg whitespace-nowrap hover:bg-indigo-950 hover:text-white transition-colors">Auraiya</button>
+        </div>
     </div>
 
-    <section class="px-4 py-8 hero-gradient relative overflow-hidden">
-        <div class="max-w-md mx-auto relative z-10 text-center mb-8">
-            <h2 class="text-rose-500 text-[10px] font-black uppercase tracking-[4px] mb-2">Legal Defense Force</h2>
-            <h1 class="heading-font text-white text-[26px] font-[900] leading-tight italic uppercase tracking-tighter">
-                ETAWAH'S SAME-DAY<br><span class="text-white opacity-80 underline decoration-rose-600">LEGAL EXPERTS</span>
-            </h1>
-        </div>
+    <main id="lawyer-list" class="max-w-2xl mx-auto px-5 space-y-6 pb-12 flex-grow">
+    </main>
 
-        <div class="grid grid-cols-2 gap-4 max-w-lg mx-auto relative z-10">
-            <div class="profile-card p-4 rounded-[30px] text-center shadow-2xl">
-                <div class="w-20 h-20 mx-auto rounded-2xl bg-slate-100 overflow-hidden mb-3 border-2 border-slate-900">
-                    <img src="vikas_yadav.jpg" alt="Adv. Vikas Yadav" class="w-full h-full object-cover">
-                </div>
-                <h3 class="text-[14px] font-[800] text-slate-900 leading-none">Adv. Vikas</h3>
-                <p class="text-[8px] text-rose-600 font-bold uppercase mt-1">Criminal Specialist</p>
-                <div class="flex justify-center gap-0.5 mt-2 text-amber-400 text-[8px]">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                </div>
-                <p class="text-[7px] text-slate-400 font-bold mt-1 uppercase italic">5.0 Google Review</p>
-            </div>
-
-            <div class="profile-card p-4 rounded-[30px] text-center shadow-2xl">
-                <div class="w-20 h-20 mx-auto rounded-2xl bg-slate-100 overflow-hidden mb-3 border-2 border-rose-600">
-                    <img src="saurabh_yadav.jpg" alt="Adv. Saurabh Yadav" class="w-full h-full object-cover">
-                </div>
-                <h3 class="text-[14px] font-[800] text-slate-900 leading-none">Adv. Saurabh</h3>
-                <p class="text-[8px] text-rose-600 font-bold uppercase mt-1">Bail & Marriage</p>
-                <div class="flex justify-center gap-0.5 mt-2 text-amber-400 text-[8px]">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                </div>
-                <p class="text-[7px] text-slate-400 font-bold mt-1 uppercase italic">4.9 Google Review</p>
-            </div>
-        </div>
-
-        <div class="flex justify-center gap-4 mt-8 relative z-10">
-            <div class="text-center bg-white/5 px-4 py-2 rounded-2xl border border-white/10">
-                <div class="text-white text-[12px] font-black">15+</div>
-                <div class="text-white/40 text-[7px] uppercase font-bold tracking-widest">Years Exp.</div>
-            </div>
-            <div class="text-center bg-white/5 px-4 py-2 rounded-2xl border border-white/10">
-                <div class="text-white text-[12px] font-black">2000+</div>
-                <div class="text-white/40 text-[7px] uppercase font-bold tracking-widest">Successful Bails</div>
-            </div>
-        </div>
-
-        <i class="fa fa-gavel absolute -right-10 -bottom-10 text-[180px] text-white/[0.03] -rotate-12"></i>
-    </section>
-
-    <div class="px-4 -mt-6 relative z-20">
-        <a href="tel:8979737979" class="urgent-btn bg-white p-4 rounded-2xl flex items-center justify-between shadow-xl border border-slate-100">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-rose-600 rounded-xl flex items-center justify-center text-white">
-                    <i class="fa fa-phone-flip animate-bounce"></i>
-                </div>
-                <div>
-                    <h4 class="text-[12px] font-black text-slate-900 uppercase">Emergency Defense Line</h4>
-                    <p class="text-[8px] font-bold text-slate-500 uppercase italic">Speak to Vikas Yadav directly</p>
-                </div>
-            </div>
-            <i class="fa fa-chevron-right text-slate-300 text-sm"></i>
-        </a>
-    </div><section class="p-6 mt-4">
-        <div class="flex flex-col mb-6 px-2">
-            <h4 class="text-[10px] font-black uppercase tracking-[3px] text-rose-600 italic">Legal Solutions</h4>
-            <h2 class="heading-font text-[22px] font-black text-slate-900 uppercase italic tracking-tighter leading-none mt-1">Our Core Services</h2>
-        </div>
-
-        <div class="grid grid-cols-3 gap-3">
+    <footer class="bg-slate-900 text-white pt-16 pb-8 px-6 mt-auto">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-slate-800 pb-10 mb-8">
             
-            <a href="bail.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-rose-50 active:border-rose-200 transition-all">
-                <div class="w-11 h-11 bg-rose-50 rounded-2xl flex items-center justify-center text-rose-600 mb-3">
-                    <i class="fa fa-unlock-keyhole text-lg"></i>
+            <div class="md:col-span-1">
+                <div class="flex items-center space-x-2 mb-4">
+                    <i class="fas fa-balance-scale text-orange-500 text-2xl"></i>
+                    <span class="text-xl font-bold">UP-LEGAL</span>
                 </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Same Day Bail</h4>
-            </a>
-
-            <a href="marriage.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-rose-50 active:border-rose-200 transition-all">
-                <div class="w-11 h-11 bg-rose-50 rounded-2xl flex items-center justify-center text-rose-600 mb-3">
-                    <i class="fa fa-ring text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Court Marriage</h4>
-            </a>
-
-            <a href="car-release.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-rose-50 active:border-rose-200 transition-all">
-                <div class="w-11 h-11 bg-rose-50 rounded-2xl flex items-center justify-center text-rose-600 mb-3">
-                    <i class="fa fa-car-side text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Car Release</h4>
-            </a>
-
-            <a href="ndps.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-pills text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">NDPS Act</h4>
-            </a>
-
-            <a href="gangster.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-user-shield text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Gangster Act</h4>
-            </a>
-
-            <a href="scst.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-handcuffs text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">SC/ST Act</h4>
-            </a>
-
-            <a href="murder.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-gavel text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">302/307 Case</h4>
-            </a>
-
-            <a href="quashing.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-file-circle-xmark text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">FIR Quashing</h4>
-            </a>
-
-            <a href="cyber.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-laptop-code text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Cyber Crime</h4>
-            </a>
-
-            <a href="pocso.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-child-reaching text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">POCSO Act</h4>
-            </a>
-
-            <a href="arms.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-gun text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Arms Act</h4>
-            </a>
-
-            <a href="divorce.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-heart-crack text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Divorce Case</h4>
-            </a>
-
-        </div>
-    </section><section class="p-6 pt-0">
-        <div class="grid grid-cols-3 gap-3">
-            
-            <a href="cheque-bounce.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-money-check-dollar text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">138 NI Act</h4>
-            </a>
-
-            <a href="dowry-case.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-house-chimney-crack text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">498A Case</h4>
-            </a>
-
-            <a href="property.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-house-lock text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Property Case</h4>
-            </a>
-
-            <a href="revenue.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-map-location-dot text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Revenue Case</h4>
-            </a>
-
-            <a href="high-court.html" class="bg-white border border-rose-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-rose-50 transition-all">
-                <div class="w-11 h-11 bg-rose-50 rounded-2xl flex items-center justify-center text-rose-600 mb-3">
-                    <i class="fa fa-building-columns text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">HC Writ 226</h4>
-            </a>
-
-            <a href="maintenance.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-user-group text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">125 CrPC</h4>
-            </a>
-
-            <a href="consumer.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-cart-shopping text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Consumer Forum</h4>
-            </a>
-
-            <a href="transit-bail.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-plane-departure text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Transit Bail</h4>
-            </a>
-
-            <a href="mact.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-truck-medical text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">MACT Claim</h4>
-            </a>
-
-            <a href="jail-meeting.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-user-lock text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Jail Meeting</h4>
-            </a>
-
-            <a href="civil-suit.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-landmark text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">Civil Suit</h4>
-            </a>
-
-            <a href="dv-act.html" class="bg-white border border-slate-100 p-4 rounded-[28px] flex flex-col items-center text-center shadow-sm active:bg-slate-50 transition-all">
-                <div class="w-11 h-11 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-700 mb-3">
-                    <i class="fa fa-house-fire text-lg"></i>
-                </div>
-                <h4 class="text-[9px] font-black uppercase text-slate-800 leading-tight">DV Act Case</h4>
-            </a>
-
-            <a href="tel:8979737979" class="bg-slate-900 p-4 rounded-[28px] flex flex-col items-center text-center shadow-lg col-span-3 active:scale-95 transition-all">
-                <div class="flex items-center gap-3 text-white">
-                    <i class="fa fa-video text-rose-500"></i>
-                    <h4 class="text-[10px] font-[900] uppercase tracking-widest">Book Video Call with Vikas & Saurabh</h4>
-                </div>
-            </a>
-
-        </div>
-    </section><section class="p-6">
-        <div class="bg-white border-2 border-rose-600 rounded-[40px] p-6 relative overflow-hidden shadow-2xl shadow-rose-100">
-            
-            <div class="flex items-center gap-3 mb-5">
-                <div class="w-12 h-12 bg-rose-600 rounded-2xl flex items-center justify-center text-white shadow-lg animate-pulse">
-                    <i class="fa fa-building-shield text-xl"></i>
-                </div>
-                <div>
-                    <h2 class="text-[16px] font-[900] text-slate-900 uppercase italic leading-none">Emergency <span class="text-rose-600">Thana</span> Help</h2>
-                    <p class="text-[8px] font-black text-rose-500 uppercase tracking-widest mt-1">Don't Wait! Arrest is a Matter of Minutes.</p>
-                </div>
-            </div>
-
-            <div class="space-y-4">
-                <div class="bg-rose-50 p-4 rounded-2xl border-l-4 border-rose-600">
-                    <p class="text-[11px] text-slate-700 font-bold leading-relaxed italic">
-                        "Agar aapka koi apna **Etawah Kotwali**, **Civil Lines**, ya **ITP** thane mein custody mein hai, toh pehle 2 ghante sabse critical hote hain. Illegal custody aur torture se bachne ke liye hamari team turant spot par pahunchti hai."
-                    </p>
-                </div>
-
-                <p class="text-[10px] text-slate-500 font-medium px-2">
-                    <i class="fa fa-circle-check text-emerald-500 mr-1"></i> Immediate 24/7 Thana Visit available. <br>
-                    <i class="fa fa-circle-check text-emerald-500 mr-1"></i> Preventive Legal Protection from Arrest.
+                <p class="text-xs text-slate-400 leading-relaxed mb-4">
+                    Connecting citizens with the top 5 verified legal experts across Uttar Pradesh districts. Trust, Transparency, and Justice.
                 </p>
-            </div>
-
-            <div class="mt-6">
-                <h4 class="text-[8px] font-black text-slate-400 uppercase tracking-[3px] mb-3 px-1">Covering All Major Stations:</h4>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-slate-100 text-slate-700 text-[8px] font-black px-3 py-2 rounded-xl border border-slate-200 uppercase">Kotwali Etawah</span>
-                    <span class="bg-slate-100 text-slate-700 text-[8px] font-black px-3 py-2 rounded-xl border border-slate-200 uppercase">Civil Lines</span>
-                    <span class="bg-slate-100 text-slate-700 text-[8px] font-black px-3 py-2 rounded-xl border border-slate-200 uppercase">Friends Colony</span>
-                    <span class="bg-slate-100 text-slate-700 text-[8px] font-black px-3 py-2 rounded-xl border border-slate-200 uppercase">Ekdil</span>
-                    <span class="bg-slate-100 text-slate-700 text-[8px] font-black px-3 py-2 rounded-xl border border-slate-200 uppercase">Bakhewar</span>
-                    <span class="bg-slate-100 text-slate-700 text-[8px] font-black px-3 py-2 rounded-xl border border-slate-200 uppercase">Bharthana</span>
-                    <span class="bg-slate-100 text-slate-700 text-[8px] font-black px-3 py-2 rounded-xl border border-slate-200 uppercase">Jaswantnagar</span>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-orange-600 transition"><i class="fab fa-facebook-f text-xs"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-orange-600 transition"><i class="fab fa-twitter text-xs"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-orange-600 transition"><i class="fab fa-whatsapp text-xs"></i></a>
                 </div>
             </div>
 
-            <a href="tel:8979737979" class="mt-6 w-full bg-rose-600 text-white py-4 rounded-2xl flex items-center justify-center gap-3 text-[12px] font-black uppercase italic shadow-lg shadow-rose-200 active:scale-95 transition-all">
-                <i class="fa fa-phone-volume"></i> Urgent Thana Intervention
-            </a>
-
-            <i class="fa fa-shield-halved absolute -right-6 -top-6 text-slate-50 text-8xl -rotate-12 z-0"></i>
-        </div>
-    </section><section class="px-6 py-10 bg-slate-100/50">
-        
-        <div class="mb-10 text-center">
-            <h4 class="text-[9px] font-black uppercase tracking-[4px] text-slate-400 mb-2">Trusted by 2000+ Clients</h4>
-            <div class="flex justify-center items-center gap-2 mb-2">
-                <span class="text-2xl font-black text-slate-900">4.9</span>
-                <div class="flex text-amber-400 text-xs">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                </div>
-            </div>
-            <p class="text-[10px] font-bold text-slate-500 uppercase">Verified Google Business Reviews</p>
-        </div>
-
-        <div class="space-y-4">
-            <h3 class="heading-font text-[18px] font-black uppercase italic tracking-tighter mb-6">Our 3-Step <span class="text-rose-600">Action Plan</span></h3>
-            
-            <div class="bg-white p-5 rounded-[30px] border border-slate-200 flex gap-4 shadow-sm">
-                <div class="w-10 h-10 shrink-0 bg-slate-900 text-white rounded-2xl flex items-center justify-center font-black">1</div>
-                <div>
-                    <h4 class="text-[12px] font-black uppercase text-slate-900">Free Case Analysis</h4>
-                    <p class="text-[10px] text-slate-500 font-medium leading-relaxed mt-1">Humein call karein aur apna case discuss karein. Hum 10 minute mein aapko best legal rasta batayenge.</p>
-                </div>
-            </div>
-
-            <div class="bg-white p-5 rounded-[30px] border border-slate-200 flex gap-4 shadow-sm">
-                <div class="w-10 h-10 shrink-0 bg-rose-600 text-white rounded-2xl flex items-center justify-center font-black">2</div>
-                <div>
-                    <h4 class="text-[12px] font-black uppercase text-slate-900">Instant Filing</h4>
-                    <p class="text-[10px] text-slate-500 font-medium leading-relaxed mt-1">Drafting team turant paper taiyar karti hai aur agle hi session mein Court mein application move hoti hai.</p>
-                </div>
-            </div>
-
-            <div class="bg-white p-5 rounded-[30px] border border-slate-200 flex gap-4 shadow-sm">
-                <div class="w-10 h-10 shrink-0 bg-slate-900 text-white rounded-2xl flex items-center justify-center font-black">3</div>
-                <div>
-                    <h4 class="text-[12px] font-black uppercase text-slate-900">Order & Release</h4>
-                    <p class="text-[10px] text-slate-500 font-medium leading-relaxed mt-1">Order secure hote hi hum release ki process poori karwate hain. Zero delay policy.</p>
-                </div>
-            </div>
-        </div>
-    </section><section class="p-6 bg-white">
-        
-        <div class="mb-10">
-            <h4 class="text-[9px] font-black uppercase tracking-[4px] text-slate-400 mb-4 px-2 italic">Priority Services</h4>
-            <div class="space-y-3">
-                <div class="bg-slate-50 p-5 rounded-[35px] border border-slate-100 flex items-center justify-between">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-rose-600 shadow-sm">
-                            <i class="fa fa-heart text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-[13px] font-[900] text-slate-900 uppercase italic">Court Marriage</h4>
-                            <p class="text-[9px] text-slate-500 font-bold uppercase">Same Day Registration</p>
-                        </div>
-                    </div>
-                    <a href="marriage.html" class="w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center">
-                        <i class="fa fa-chevron-right text-xs"></i>
-                    </a>
-                </div>
-
-                <div class="bg-slate-50 p-5 rounded-[35px] border border-slate-100 flex items-center justify-between">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-rose-600 shadow-sm">
-                            <i class="fa fa-car-burst text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-[13px] font-[900] text-slate-900 uppercase italic">Car Release</h4>
-                            <p class="text-[9px] text-slate-500 font-bold uppercase">Instant Supardari Process</p>
-                        </div>
-                    </div>
-                    <a href="car-release.html" class="w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center">
-                        <i class="fa fa-chevron-right text-xs"></i>
-                    </a>
-                </div>
-
-                <div class="bg-slate-50 p-5 rounded-[35px] border border-slate-100 flex items-center justify-between">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-rose-600 shadow-sm">
-                            <i class="fa fa-unlock-keyhole text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-[13px] font-[900] text-slate-900 uppercase italic">Bail & Arrest</h4>
-                            <p class="text-[9px] text-slate-500 font-bold uppercase">24/7 Emergency Protection</p>
-                        </div>
-                    </div>
-                    <a href="bail.html" class="w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center">
-                        <i class="fa fa-chevron-right text-xs"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-12">
-            <div class="flex justify-between items-end mb-6 px-2">
-                <div>
-                    <h4 class="text-[9px] font-black uppercase tracking-[3px] text-rose-600 italic">Knowledge Hub</h4>
-                    <h2 class="heading-font text-[22px] font-black text-slate-900 uppercase italic tracking-tighter leading-none mt-1">Latest Case Updates</h2>
-                </div>
-                <a href="#" class="text-[10px] font-black text-slate-400 uppercase border-b-2 border-slate-200 pb-1">View All</a>
-            </div>
-
-            <div class="space-y-6">
-                <div class="group">
-                    <p class="text-[8px] font-black text-rose-500 uppercase mb-2 tracking-widest">January 26, 2026 • Legal Tips</p>
-                    <h3 class="text-[15px] font-black text-slate-900 leading-snug group-active:text-rose-600 transition-colors">Etawah Court mein Same Day Bail kaise milti hai? Poori Process.</h3>
-                    <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">District Court Etawah mein bail application move karne ka sabse sahi samay aur zaroori documents ki list...</p>
-                    <div class="flex items-center gap-4 mt-4">
-                        <button class="flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-slate-900 bg-slate-100 px-4 py-2 rounded-xl">
-                            <i class="fa fa-bookmark text-rose-600"></i> Save Article
-                        </button>
-                        <button class="text-slate-400 text-sm"><i class="fa fa-share-nodes"></i></button>
-                    </div>
-                </div>
-
-                <div class="h-[1px] bg-slate-100 w-full"></div>
-
-                <div class="group">
-                    <p class="text-[8px] font-black text-rose-500 uppercase mb-2 tracking-widest">January 24, 2026 • New Laws</p>
-                    <h3 class="text-[15px] font-black text-slate-900 leading-snug group-active:text-rose-600 transition-colors">High Court Writ 226: Jab Police FIR darj na kare toh kya karein?</h3>
-                    <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">Agar local thana sunwai nahi kar raha, toh Allahabad High Court se order kaise lein. Vikas Yadav ki expert raye...</p>
-                    <div class="flex items-center gap-4 mt-4">
-                        <button class="flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-slate-900 bg-slate-100 px-4 py-2 rounded-xl">
-                            <i class="fa-regular fa-bookmark"></i> Save Article
-                        </button>
-                        <button class="text-slate-400 text-sm"><i class="fa fa-share-nodes"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><section class="p-6 bg-slate-50">
-        <div class="flex justify-between items-center mb-6">
             <div>
-                <h4 class="text-[9px] font-black uppercase tracking-[3px] text-rose-600 italic">Legal Updates</h4>
-                <h2 class="heading-font text-[20px] font-black text-slate-900 uppercase italic">Latest Blogs</h2>
+                <h4 class="font-bold text-white mb-6 text-sm uppercase tracking-wider">Company</h4>
+                <ul class="space-y-3 text-sm text-slate-400">
+                    <li><a href="about.html" class="hover:text-orange-500 transition-colors">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-orange-500 transition-colors">Our Services</a></li>
+                    <li><a href="blog.html" class="hover:text-orange-500 transition-colors">Legal Blog</a></li>
+                    <li><a href="contact.html" class="hover:text-orange-500 transition-colors">Contact Admin</a></li>
+                </ul>
             </div>
-            <a href="all-blogs.html" class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-[9px] font-black uppercase tracking-widest text-slate-600 shadow-sm active:scale-95 transition-all">
-                View All <i class="fa fa-arrow-right ml-1 text-rose-600"></i>
-            </a>
+
+            <div>
+                <h4 class="font-bold text-white mb-6 text-sm uppercase tracking-wider">Support</h4>
+                <ul class="space-y-3 text-sm text-slate-400">
+                    <li><a href="faq.html" class="hover:text-orange-500 transition-colors">Help & FAQ</a></li>
+                    <li><a href="qna.html" class="hover:text-orange-500 transition-colors">Legal Q&A Forum</a></li>
+                    <li><a href="fees.html" class="hover:text-orange-500 transition-colors">Fee Structure</a></li>
+                    <li><a href="status.html" class="hover:text-orange-500 transition-colors">Check Case Status</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white mb-6 text-sm uppercase tracking-wider">Legal</h4>
+                <ul class="space-y-3 text-sm text-slate-400">
+                    <li><a href="privacy.html" class="hover:text-orange-500 transition-colors">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:text-orange-500 transition-colors">Terms of Use</a></li>
+                    <li><a href="disclaimer.html" class="hover:text-orange-500 transition-colors">Disclaimer</a></li>
+                    <li><a href="login.html" class="text-orange-500 font-bold hover:text-white transition-colors">Advocate Login</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="flex gap-4 overflow-x-auto pb-6 snap-x no-scrollbar">
-            <div class="min-w-[85%] snap-center bg-white p-5 rounded-[35px] border border-slate-100 shadow-xl shadow-slate-200/50">
-                <span class="bg-rose-100 text-rose-600 text-[7px] font-black px-2 py-1 rounded-md uppercase">New Article</span>
-                <h3 class="text-[14px] font-[900] text-slate-900 mt-3 leading-snug italic">Etawah Court: 48 ghante mein car release ki poori prakriya.</h3>
-                <p class="text-[10px] text-slate-500 mt-2 line-clamp-2">Supardari application kaise lagayein aur documents kya chahiye honge...</p>
-                <div class="mt-4 flex items-center justify-between">
-                    <span class="text-[8px] font-bold text-slate-400">5 Mins Read</span>
-                    <i class="fa fa-bookmark text-slate-300"></i>
-                </div>
-            </div>
-
-            <div class="min-w-[85%] snap-center bg-white p-5 rounded-[35px] border border-slate-100 shadow-xl shadow-slate-200/50">
-                <span class="bg-slate-100 text-slate-600 text-[7px] font-black px-2 py-1 rounded-md uppercase">Drafting</span>
-                <h3 class="text-[14px] font-[900] text-slate-900 mt-3 leading-snug italic">Court Marriage vs Nikah: Legal Validity in 2026.</h3>
-                <p class="text-[10px] text-slate-500 mt-2 line-clamp-2">Naye kanoon ke hisaab se registration kyun zaroori hai...</p>
-                <div class="mt-4 flex items-center justify-between">
-                    <span class="text-[8px] font-bold text-slate-400">8 Mins Read</span>
-                    <i class="fa fa-bookmark text-slate-300"></i>
-                </div>
-            </div>
+        <div class="text-center">
+            <p class="text-[10px] text-slate-500 uppercase tracking-widest">&copy; 2026 UP-Legal Directory Pvt Ltd. All Rights Reserved.</p>
         </div>
-    </section>
-
-    <footer class="bg-slate-900 pt-12 pb-40 px-6 rounded-t-[50px]">
-        <div class="grid grid-cols-2 gap-3 opacity-80">
-             <a href="#" class="bg-white/5 p-3 rounded-xl text-white text-[8px] font-bold text-center uppercase">WhatsApp</a>
-             <a href="#" class="bg-white/5 p-3 rounded-xl text-white text-[8px] font-bold text-center uppercase">Location</a>
-             <a href="#" class="bg-white/5 p-3 rounded-xl text-white text-[8px] font-bold text-center uppercase">FAQ</a>
-             <a href="#" class="bg-white/5 p-3 rounded-xl text-white text-[8px] font-bold text-center uppercase">About Us</a>
-             </div>
     </footer>
 
-    <div class="fixed bottom-0 left-0 right-0 z-[3000] p-4 bg-white/90 backdrop-blur-2xl border-t border-slate-100">
-        <div class="grid grid-cols-2 gap-4 max-w-lg mx-auto">
-            <a href="tel:8979737979" class="bg-slate-900 text-white py-5 rounded-[25px] flex flex-col items-center justify-center shadow-2xl active:scale-95 transition-all">
-                <div class="flex items-center gap-2">
-                    <i class="fa fa-phone-volume text-rose-500 animate-pulse text-xs"></i>
-                    <span class="text-[11px] font-black uppercase tracking-tighter">Adv. Vikas Yadav</span>
-                </div>
-                <span class="text-[7px] font-bold text-slate-400 uppercase tracking-widest mt-1">Criminal Specialist</span>
-            </a>
-
-            <a href="tel:8979737979" class="bg-rose-600 text-white py-5 rounded-[25px] flex flex-col items-center justify-center shadow-2xl active:scale-95 transition-all">
-                <div class="flex items-center gap-2">
-                    <i class="fa fa-phone-volume text-white animate-pulse text-xs"></i>
-                    <span class="text-[11px] font-black uppercase tracking-tighter">Adv. Saurabh Yadav</span>
-                </div>
-                <span class="text-[7px] font-bold text-rose-100 uppercase tracking-widest mt-1">Bail & Marriage</span>
-            </a>
-        </div>
-    </div><div class="bg-slate-950 py-6 px-6 text-center border-t border-white/5">
-        <p class="text-[8px] font-medium text-slate-500 uppercase tracking-[2px] leading-relaxed">
-            Legal Etawah is a private legal consultancy firm. <br>
-            Handcrafted for Advocates Vikas Yadav & Saurabh Yadav.
-        </p>
-        <div class="mt-4 flex justify-center gap-6">
-            <i class="fa-brands fa-google text-slate-700 text-xs"></i>
-            <i class="fa-brands fa-facebook text-slate-700 text-xs"></i>
-            <i class="fa-brands fa-instagram text-slate-700 text-xs"></i>
-        </div>
-    </div>
-
     <script>
-        // Smooth scroll effect for internal links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+        // DATA OBJECT: Yahan aap Name aur Phone number edit kar sakte hain
+        // Structure: { name: "Name", phone: "Number" }
+        
+        const advocatesData = {
+            'Lucknow': [
+                { name: 'Saurabh Yadav', phone: '8923925757' }, // Rank 1
+                { name: 'Sandeep Singh', phone: '9123456780' }, // Rank 2
+                { name: 'Priyanka Verma', phone: '9123456781' },
+                { name: 'Amit Shukla', phone: '9123456782' },
+                { name: 'Rahul Mishra', phone: '9123456783' }
+            ],
+            'Kanpur': [
+                { name: 'Saurabh Yadav', phone: '8923925757' }, // Rank 1 (Same as Lucknow)
+                { name: 'Vijay Nigam', phone: '9123456784' },
+                { name: 'Sapna Reddy', phone: '9123456785' },
+                { name: 'Ishwar Das', phone: '9123456786' },
+                { name: 'Pankaj Saini', phone: '9123456787' }
+            ],
+            'Etawah': [
+                { name: 'Vikas Yadav', phone: '8979737979' }, // Rank 1
+                { name: 'B.L. Yadav', phone: '9123456788' },
+                { name: 'Sumit Gaur', phone: '9123456789' },
+                { name: 'Alok Pandey', phone: '9123456790' },
+                { name: 'Neeraj Kumar', phone: '9123456791' }
+            ],
+            'Mainpuri': [
+                { name: 'Vikas Yadav', phone: '8979737979' }, // Rank 1 (Same as Etawah)
+                { name: 'Vimal Kumar', phone: '9123456792' },
+                { name: 'Shailendra Singh', phone: '9123456793' },
+                { name: 'Anand Rao', phone: '9123456794' },
+                { name: 'Kamal Kant', phone: '9123456795' }
+            ],
+            'Agra': [
+                { name: 'Suresh Sharma', phone: '98XXXXXXXX' },
+                { name: 'Mohit Jain', phone: '98XXXXXXXX' },
+                { name: 'Anjali Gupta', phone: '98XXXXXXXX' },
+                { name: 'Vikram Rathore', phone: '98XXXXXXXX' },
+                { name: 'Deepak Tyagi', phone: '98XXXXXXXX' }
+            ],
+            'Firozabad': [
+                { name: 'J.P. Gupta', phone: '98XXXXXXXX' },
+                { name: 'Manish Lodhi', phone: '98XXXXXXXX' },
+                { name: 'Rinku Baghel', phone: '98XXXXXXXX' },
+                { name: 'Tarun Dev', phone: '98XXXXXXXX' },
+                { name: 'Arpit Jain', phone: '98XXXXXXXX' }
+            ],
+            'Auraiya': [
+                { name: 'D.N. Tripathi', phone: '98XXXXXXXX' },
+                { name: 'Shivpal Singh', phone: '98XXXXXXXX' },
+                { name: 'Ram Mohan', phone: '98XXXXXXXX' },
+                { name: 'Gaurav Das', phone: '98XXXXXXXX' },
+                { name: 'Tushar Kant', phone: '98XXXXXXXX' }
+            ]
+        };
 
+        function filterList(city) {
+            document.getElementById('city-name-display').innerText = city;
+            const container = document.getElementById('lawyer-list');
+            container.innerHTML = "";
+
+            // Get list for selected city
+            const cityLawyers = advocatesData[city] || [];
+
+            cityLawyers.forEach((lawyer, index) => {
+                const rank = index + 1;
+                
+                container.innerHTML += `
+                <div class="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm hover-lift relative overflow-hidden group mb-4">
+                    <div class="absolute top-0 right-0 bg-indigo-50 text-indigo-700 text-[10px] font-bold px-3 py-1 rounded-bl-xl">RANK #${rank}</div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <img src="https://ui-avatars.com/api/?name=${lawyer.name.replace(' ', '+')}&background=random&size=150" alt="${lawyer.name}" class="w-16 h-16 rounded-xl object-cover shadow-sm">
+                        
+                        <div>
+                            <h3 class="font-bold text-indigo-950 text-lg">Advocate ${lawyer.name}</h3>
+                            <p class="text-xs text-orange-600 font-bold uppercase mb-1">${city} District Court</p>
+                            <div class="flex text-yellow-400 text-[10px]">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span class="text-gray-400 ml-1">(4.9)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex space-x-3">
+                        <a href="tel:${lawyer.phone}" class="flex-1 bg-indigo-950 text-white py-3 rounded-xl text-xs font-bold text-center">
+                            <i class="fas fa-phone mr-2"></i> Call Now
+                        </a>
+                        <a href="profile.html?name=${encodeURIComponent(lawyer.name)}&city=${city}" class="flex-1 border border-indigo-200 text-indigo-900 py-3 rounded-xl text-xs font-bold text-center hover:bg-indigo-50">
+                            View Profile
+                        </a>
+                    </div>
+                </div>`;
+            });
+        }
+
+        // Initialize with default city
+        filterList('Lucknow');
+    </script>
 </body>
 </html>
