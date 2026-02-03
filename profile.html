@@ -11,8 +11,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advocate Saurabh Yadav | Best High Court Lawyer Lucknow</title>
-    <meta name="description" content="Advocate Saurabh Yadav - Lucknow's Top Criminal & Civil Lawyer. Expert in Bail, Property, Divorce. 12+ Years Exp. Call: 8923925757.">
+    <title id="meta-title">Advocate Profile | UP-Legal Directory</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -21,21 +20,12 @@
     <style>
         body { font-family: 'Outfit', sans-serif; background-color: #F8FAFC; }
         .hindi-text { font-family: 'Noto Serif Devanagari', serif; }
-        
-        /* Gradients */
         .premium-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%); }
-        .gold-gradient { background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); }
-        
-        /* Animations */
+        .btn-pulse { animation: pulse-glow 2s infinite; }
         @keyframes pulse-glow {
             0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
             50% { box-shadow: 0 0 0 15px rgba(37, 99, 235, 0); }
         }
-        .btn-pulse { animation: pulse-glow 2s infinite; }
-        
-        /* Card Hover Effects */
-        .hover-card { transition: all 0.3s ease; }
-        .hover-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
     </style>
 </head>
 <body class="text-slate-800 pb-20 md:pb-0">
@@ -52,61 +42,47 @@
 
     <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-blue-700 text-white rounded-lg flex items-center justify-center text-xl font-bold">SY</div>
-                <div class="leading-tight">
-                    <h1 class="text-lg font-bold text-slate-900">Adv. Saurabh Yadav</h1>
-                    <p class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">High Court Lucknow</p>
-                </div>
+            <a href="index.html" class="flex items-center gap-2 group">
+                <i class="fas fa-arrow-left text-slate-500 text-lg"></i>
+                <span class="font-bold text-slate-700">Back to List</span>
             </a>
-            
-            <a href="tel:8923925757" class="hidden md:flex bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-bold shadow-lg transition items-center gap-2">
-                <i class="fas fa-phone-alt animate-pulse"></i> 8923925757
+            <a id="nav-btn-call" href="#" class="hidden md:flex bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold shadow-lg items-center gap-2">
+                <i class="fas fa-phone-alt animate-pulse"></i> Call Now
             </a>
         </div>
     </nav>
 
     <header class="premium-gradient text-white pt-12 pb-24 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-overlay filter blur-3xl opacity-20"></div>
-        <div class="absolute bottom-0 left-0 w-64 h-64 bg-purple-500 rounded-full mix-blend-overlay filter blur-3xl opacity-20"></div>
-
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center relative z-10">
             <div class="text-center md:text-left space-y-6">
                 <div class="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-1 text-xs font-bold uppercase tracking-widest text-blue-200">
-                    Insaf Ki Ladai, Humare Saath
+                    Verified Advocate • <span id="hero-city">Uttar Pradesh</span>
                 </div>
                 
                 <h2 class="text-4xl md:text-6xl font-bold leading-tight">
-                    कानूनी परेशानी?<br>
-                    <span class="text-yellow-400">सही सलाह, पक्का समाधान।</span>
+                    Advocate <br><span class="text-yellow-400" id="hero-name">Loading...</span>
                 </h2>
                 
-                <p class="text-blue-100 text-lg leading-relaxed max-w-lg mx-auto md:mx-0">
-                    High Court Lucknow के सीनियर वकील <strong>Adv. Saurabh Yadav</strong>। 
-                    Bail, Property और Family मामलों में 12 साल का तजुर्बा।
+                <p class="text-blue-100 text-lg leading-relaxed max-w-lg mx-auto md:mx-0" id="hero-bio">
+                    Loading profile details...
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-                    <a href="tel:8923925757" class="bg-blue-600 border-2 border-blue-400 text-white text-lg font-bold py-4 px-8 rounded-xl shadow-2xl hover:bg-blue-500 transition btn-pulse flex items-center justify-center gap-2">
-                        <i class="fas fa-phone-alt"></i> कॉल करें (Call Now)
+                    <a id="btn-call" href="#" class="bg-blue-600 border-2 border-blue-400 text-white text-lg font-bold py-4 px-8 rounded-xl shadow-2xl hover:bg-blue-500 transition btn-pulse flex items-center justify-center gap-2">
+                        <i class="fas fa-phone-alt"></i> Call Now
                     </a>
-                    <a href="https://wa.me/918923925757" class="bg-green-600 text-white text-lg font-bold py-4 px-8 rounded-xl shadow-xl hover:bg-green-500 transition flex items-center justify-center gap-2">
-                        <i class="fab fa-whatsapp text-2xl"></i> WhatsApp Chat
+                    <a id="btn-whatsapp" href="#" class="bg-green-600 text-white text-lg font-bold py-4 px-8 rounded-xl shadow-xl hover:bg-green-500 transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-2xl"></i> WhatsApp
                     </a>
                 </div>
             </div>
 
             <div class="relative flex justify-center md:justify-end">
-                <div class="relative w-72 h-80 md:w-80 md:h-96 bg-white p-2 rounded-2xl shadow-2xl rotate-2 hover:rotate-0 transition duration-500">
+                <div class="relative w-72 h-80 md:w-80 md:h-96 bg-white p-2 rounded-2xl shadow-2xl rotate-2">
                     <div class="absolute -top-4 -left-4 bg-yellow-400 text-slate-900 font-bold px-4 py-2 rounded-lg shadow-lg z-20">
-                        Rank #1 Verified
+                        Rank #<span id="rank-badge">1</span> Verified
                     </div>
-                    <img src="https://ui-avatars.com/api/?name=Saurabh+Yadav&background=0f172a&color=fff&size=512&bold=true" class="w-full h-full object-cover rounded-xl bg-slate-100">
-                    
-                    <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur border border-slate-200 p-3 rounded-lg shadow-lg text-center">
-                        <div class="text-2xl font-black text-slate-900">850+</div>
-                        <div class="text-[10px] text-slate-500 font-bold uppercase">Cases Won (जीत)</div>
-                    </div>
+                    <img id="profile-image" src="" class="w-full h-full object-cover rounded-xl bg-slate-100" alt="Lawyer Image">
                 </div>
             </div>
         </div>
@@ -115,7 +91,7 @@
     <div class="max-w-5xl mx-auto px-4 -mt-10 relative z-20">
         <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-6 grid grid-cols-3 gap-4 text-center divide-x divide-slate-100">
             <div>
-                <div class="text-2xl md:text-3xl font-black text-blue-600">12+</div>
+                <div class="text-2xl md:text-3xl font-black text-blue-600" id="stat-exp">10+</div>
                 <div class="text-xs text-slate-500 font-bold">Years Exp.</div>
             </div>
             <div>
@@ -129,8 +105,7 @@
         </div>
     </div>
 
-    <section id="expertise" class="max-w-7xl mx-auto px-6 py-20 bg-slate-50">
-        
+    <section class="max-w-7xl mx-auto px-6 py-20 bg-slate-50">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <span class="text-blue-600 font-bold text-sm uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full">Legal Specialization</span>
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-4 hindi-text">कानूनी विशेषज्ञता (Areas of Practice)</h2>
@@ -140,305 +115,130 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div class="bg-white p-8 rounded-2xl border-l-4 border-red-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-                <div class="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center text-red-600 text-2xl mb-6 group-hover:bg-red-600 group-hover:text-white transition">
-                    <i class="fas fa-handcuffs"></i>
-                </div>
+            <div class="bg-white p-8 rounded-2xl border-l-4 border-red-500 shadow-sm">
+                <div class="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center text-red-600 text-2xl mb-6"><i class="fas fa-handcuffs"></i></div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3">Criminal Defense & Bail</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                    गंभीर अपराधों (Murder, Attempt to Murder) में पुलिस स्टेशन से लेकर सेशन कोर्ट और हाई कोर्ट तक बचाव। अगर पुलिस परेशान कर रही है, तो तुरंत संपर्क करें।
-                </p>
-                <div class="flex gap-2 flex-wrap">
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Regular Bail</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Anticipatory Bail</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">NDPS Act</span>
-                </div>
+                <p class="text-slate-600 text-sm mb-4">गंभीर अपराधों में पुलिस स्टेशन से लेकर हाई कोर्ट तक बचाव। Bail, FIR Quashing.</p>
             </div>
-
-            <div class="bg-white p-8 rounded-2xl border-l-4 border-blue-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-                <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
-                    <i class="fas fa-landmark"></i>
-                </div>
+            <div class="bg-white p-8 rounded-2xl border-l-4 border-blue-500 shadow-sm">
+                <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6"><i class="fas fa-landmark"></i></div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3">Property Disputes</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                    पुश्तैनी जायदाद का बंटवारा, अवैध कब्ज़ा हटवाना, या किराएदार से मकान खाली कराना। हम सिविल कोर्ट से स्टे आर्डर (Stay Order) दिलवाने में माहिर हैं।
-                </p>
-                <div class="flex gap-2 flex-wrap">
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Partition Suit</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Illegal Possession</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">RERA</span>
-                </div>
+                <p class="text-slate-600 text-sm mb-4">पुश्तैनी जायदाद का बंटवारा, अवैध कब्ज़ा हटवाना, Stay Order दिलवाना।</p>
             </div>
-
-            <div class="bg-white p-8 rounded-2xl border-l-4 border-pink-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-                <div class="w-14 h-14 bg-pink-50 rounded-xl flex items-center justify-center text-pink-600 text-2xl mb-6 group-hover:bg-pink-600 group-hover:text-white transition">
-                    <i class="fas fa-user-friends"></i>
-                </div>
+            <div class="bg-white p-8 rounded-2xl border-l-4 border-pink-500 shadow-sm">
+                <div class="w-14 h-14 bg-pink-50 rounded-xl flex items-center justify-center text-pink-600 text-2xl mb-6"><i class="fas fa-user-friends"></i></div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3">Family & Divorce</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                    रिश्तों को सुलझाना या सम्मानजनक तरीके से अलग होना। दहेज़ प्रताड़ना (498A) और घरेलू हिंसा के झूठे केसों से पतियों का बचाव।
-                </p>
-                <div class="flex gap-2 flex-wrap">
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Mutual Divorce</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Child Custody</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Maintenance</span>
-                </div>
+                <p class="text-slate-600 text-sm mb-4">तलाक, गुजारा भत्ता (Maintenance) और घरेलू हिंसा के केसों में मदद।</p>
             </div>
-
-            <div class="bg-white p-8 rounded-2xl border-l-4 border-green-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-                <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center text-green-600 text-2xl mb-6 group-hover:bg-green-600 group-hover:text-white transition">
-                    <i class="fas fa-money-check-alt"></i>
-                </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-3">Cheque Bounce (NI Act)</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                    अगर किसी ने आपका पैसा रोका है या चेक बाउंस हुआ है, तो 15 दिन के अंदर लीगल नोटिस भिजवाएं और कोर्ट के ज़रिये पैसा वसूलें।
-                </p>
-                <div class="flex gap-2 flex-wrap">
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Section 138</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Recovery Suit</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Legal Notice</span>
-                </div>
+            <div class="bg-white p-8 rounded-2xl border-l-4 border-green-500 shadow-sm">
+                <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center text-green-600 text-2xl mb-6"><i class="fas fa-money-check-alt"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Cheque Bounce</h3>
+                <p class="text-slate-600 text-sm mb-4">चेक बाउंस (138 NI Act) और पैसों की वसूली (Recovery) के मामले।</p>
             </div>
-
-            <div class="bg-white p-8 rounded-2xl border-l-4 border-purple-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-                <div class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 text-2xl mb-6 group-hover:bg-purple-600 group-hover:text-white transition">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
+            <div class="bg-white p-8 rounded-2xl border-l-4 border-purple-500 shadow-sm">
+                <div class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 text-2xl mb-6"><i class="fas fa-laptop-code"></i></div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3">Cyber Crime</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                    Online Fraud, Blackmailing, या सोशल मीडिया पर मानहानि (Defamation) के मामलों में साइबर सेल और कोर्ट में शिकायत।
-                </p>
-                <div class="flex gap-2 flex-wrap">
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">IT Act 2000</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Financial Fraud</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Data Theft</span>
-                </div>
+                <p class="text-slate-600 text-sm mb-4">Online Fraud, Blackmailing और डेटा चोरी के मामलों में कानूनी सहायता।</p>
             </div>
-
-            <div class="bg-white p-8 rounded-2xl border-l-4 border-orange-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-                <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-600 text-2xl mb-6 group-hover:bg-orange-600 group-hover:text-white transition">
-                    <i class="fas fa-balance-scale-right"></i>
-                </div>
+            <div class="bg-white p-8 rounded-2xl border-l-4 border-orange-500 shadow-sm">
+                <div class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center text-orange-600 text-2xl mb-6"><i class="fas fa-balance-scale-right"></i></div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3">High Court Writs</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-5">
-                    अगर पुलिस FIR नहीं लिख रही या सरकारी विभाग काम नहीं कर रहा, तो High Court में Writ Petition दायर कर सीधा आदेश (Order) लें।
-                </p>
-                <div class="flex gap-2 flex-wrap">
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Article 226</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">FIR Quashing</span>
-                    <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-1 rounded border border-slate-200">Govt Matters</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="bg-white py-16 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl font-bold text-center text-slate-900 mb-10 hindi-text">हाल ही में मिली सफलताएं (Recent Wins)</h2>
-            
-            <div class="space-y-4">
-                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm flex gap-4 items-start">
-                    <div class="mt-1 text-green-500 text-xl"><i class="fas fa-check-circle"></i></div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-lg">Murder Case (302) Acquittal</h4>
-                        <p class="text-slate-600 text-sm mt-1">
-                            Lucknow Sessions Court में सबूतों के अभाव में हमारे क्लाइंट को बाइज्जत बरी किया गया। यह एक राजनीतिक रंजिश का मामला था।
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm flex gap-4 items-start">
-                    <div class="mt-1 text-blue-500 text-xl"><i class="fas fa-check-circle"></i></div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-lg">Commercial Property Stay Order</h4>
-                        <p class="text-slate-600 text-sm mt-1">
-                            कानपुर में 5 करोड़ की प्रॉपर्टी पर अवैध निर्माण रुकवाया और High Court से 48 घंटे में स्टे आर्डर लिया।
-                        </p>
-                    </div>
-                </div>
+                <p class="text-slate-600 text-sm mb-4">अगर पुलिस या प्रशासन नहीं सुन रहा, तो High Court से सीधा आर्डर लें।</p>
             </div>
         </div>
-    </section><section class="max-w-5xl mx-auto px-6 py-16 text-slate-700 leading-loose">
-        
-        <div class="mb-12 border-b border-slate-200 pb-10">
-            <h2 class="text-3xl font-bold text-slate-900 mb-6">Why Choose Advocate Saurabh Yadav for Legal Representation in Lucknow & Kanpur?</h2>
-            <p class="mb-4">
-                In the complex legal landscape of Uttar Pradesh, finding a lawyer who combines <strong>aggressive courtroom defense</strong> with <strong>strategic legal planning</strong> is rare. <strong>Advocate Saurabh Yadav</strong> stands out as a leading legal authority at the <strong>Allahabad High Court (Lucknow Bench)</strong>. With over 12 years of dedicated practice, he has successfully represented 850+ clients in high-stakes litigation ranging from <strong>Murder Trials (Section 302 IPC)</strong> to complex <strong>Corporate Economic Offenses (EOW/PMLA)</strong>.
-            </p>
-            <p>
-                Unlike junior advocates who may struggle with the procedural intricacies of the High Court, Adv. Saurabh Yadav brings deep experience in <strong>Criminal Jurisprudence</strong> and <strong>Civil Property Laws</strong>. Whether you are searching for the <em>"Best Criminal Lawyer in Lucknow"</em> or a <em>"Top Civil Advocate in Kanpur"</em>, his chambers provide a one-stop solution for all legal remedies. His success rate in securing <strong>Anticipatory Bail</strong> and <strong>Stay Orders</strong> is among the highest in the region.
-            </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-12">
-            
-            <div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center">
-                    <span class="w-2 h-8 bg-red-600 mr-3"></span> Criminal Defense & Bail Expertise
-                </h3>
-                <p class="text-sm mb-4">
-                    Facing a criminal charge can be life-altering. The police investigation is often biased, and without immediate legal intervention, you risk jail time. We specialize in:
-                </p>
-                <ul class="list-disc pl-5 space-y-2 text-sm font-medium">
-                    <li><strong>Bail Matters (Section 437/439 CrPC):</strong> Expert in securing Regular Bail from Sessions Court and High Court when lower courts reject it.</li>
-                    <li><strong>Anticipatory Bail (Section 438 CrPC):</strong> Protecting clients from arrest in false cases like 498A (Dowry) or SC/ST Act.</li>
-                    <li><strong>Heinous Crimes Defense:</strong> Specialized defense strategies for Murder (302 IPC), Attempt to Murder (307 IPC), and Rape (376 IPC) cases.</li>
-                    <li><strong>NDPS Act (Drug Cases):</strong> Challenging procedural lapses in recovery and seizure to secure bail in commercial quantity cases.</li>
-                    <li><strong>FIR Quashing (Section 482 CrPC):</strong> approaching the High Court to quash false FIRs that are filed due to personal vendetta.</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center">
-                    <span class="w-2 h-8 bg-blue-600 mr-3"></span> Property & Civil Litigation
-                </h3>
-                <p class="text-sm mb-4">
-                    Property disputes in Uttar Pradesh can drag on for decades if not handled aggressively. As a top <strong>Property Lawyer in Lucknow & Kanpur</strong>, Adv. Saurabh Yadav ensures speedy relief.
-                </p>
-                <ul class="list-disc pl-5 space-y-2 text-sm font-medium">
-                    <li><strong>Stay Orders (Injunctions):</strong> Immediate relief from the court to stop illegal construction or sale of your property (Order 39 Rule 1 & 2 CPC).</li>
-                    <li><strong>Partition Suits:</strong> Legally dividing ancestral property among brothers/family members.</li>
-                    <li><strong>Illegal Possession:</strong> Filing suits for recovery of possession against squatters or tenants refusing to vacate.</li>
-                    <li><strong>RERA & Builder Disputes:</strong> Action against builders for delayed possession or poor quality construction.</li>
-                    <li><strong>Will & Probate:</strong> Drafting and challenging Wills in court.</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center">
-                    <span class="w-2 h-8 bg-pink-600 mr-3"></span> Matrimonial & Family Law
-                </h3>
-                <p class="text-sm mb-4">
-                    Divorce is emotionally draining, but it shouldn't be financially destroying. We handle family matters with sensitivity and legal strength.
-                </p>
-                <ul class="list-disc pl-5 space-y-2 text-sm font-medium">
-                    <li><strong>Contested & Mutual Divorce:</strong> Handling complex divorce petitions involving alimony and property division.</li>
-                    <li><strong>498A Defense:</strong> Protecting innocent husbands and families from false dowry harassment cases.</li>
-                    <li><strong>Child Custody:</strong> Fighting for the visitation and custody rights of the father/mother.</li>
-                    <li><strong>Maintenance (125 CrPC):</strong> Ensuring fair maintenance is awarded or denied based on facts.</li>
-                    <li><strong>Domestic Violence Act:</strong> Representation in DV cases to prevent harassment.</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center">
-                    <span class="w-2 h-8 bg-green-600 mr-3"></span> Economic Offenses & Cheque Bounce
-                </h3>
-                <p class="text-sm mb-4">
-                    Financial disputes require a lawyer who understands numbers as well as the law. We are experts in <strong>White Collar Crimes</strong>.
-                </p>
-                <ul class="list-disc pl-5 space-y-2 text-sm font-medium">
-                    <li><strong>Cheque Bounce (138 NI Act):</strong> End-to-end handling from sending Legal Notice to filing criminal complaint and trial.</li>
-                    <li><strong>Money Laundering (PMLA):</strong> Defense against ED (Enforcement Directorate) regarding attachment of property.</li>
-                    <li><strong>EOW Investigations:</strong> Representing directors and business owners in Economic Offenses Wing cases.</li>
-                    <li><strong>Cyber Crime:</strong> Handling cases of online financial fraud, data theft, and crypto-scams.</li>
-                    <li><strong>Recovery Suits:</strong> Civil suits (Order 37 CPC) for fast recovery of dues.</li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="mt-16 bg-slate-50 p-8 rounded-2xl border border-slate-200">
-            <h3 class="text-xl font-bold text-slate-900 mb-4">Serving Clients Across Uttar Pradesh</h3>
-            <p class="text-sm text-slate-600 mb-4">
-                While our primary chambers are located at the <strong>High Court Bench in Lucknow</strong> and <strong>Kanpur Nagar District Court</strong>, our legal services extend to neighboring districts. We regularly appear for clients in:
-            </p>
-            <div class="flex flex-wrap gap-2 text-xs font-bold text-slate-500 uppercase">
-                <span class="bg-white px-3 py-2 border rounded">Unnao</span>
-                <span class="bg-white px-3 py-2 border rounded">Barabanki</span>
-                <span class="bg-white px-3 py-2 border rounded">Raebareli</span>
-                <span class="bg-white px-3 py-2 border rounded">Sitapur</span>
-                <span class="bg-white px-3 py-2 border rounded">Hardoi</span>
-                <span class="bg-white px-3 py-2 border rounded">Etawah</span>
-                <span class="bg-white px-3 py-2 border rounded">Ayodhya</span>
-            </div>
-            <p class="text-sm text-slate-600 mt-4">
-                Whether you live in <strong>Gomti Nagar, Alambagh, Hazratganj, Indiranagar</strong> (Lucknow) or <strong>Civil Lines, Swaroop Nagar, Kidwai Nagar</strong> (Kanpur), expert legal help is just a phone call away.
-            </p>
-        </div>
-
-        <div class="mt-16">
-            <h3 class="text-2xl font-bold text-center text-slate-900 mb-8">How We Win Your Case (Our Process)</h3>
-            <div class="grid md:grid-cols-4 gap-6 text-center">
-                <div class="p-4">
-                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xl font-bold mx-auto mb-4">1</div>
-                    <h4 class="font-bold text-slate-800">Case Analysis</h4>
-                    <p class="text-xs text-slate-500 mt-2">We study the FIR/Plaint in detail to find loopholes.</p>
-                </div>
-                <div class="p-4">
-                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xl font-bold mx-auto mb-4">2</div>
-                    <h4 class="font-bold text-slate-800">Strategy</h4>
-                    <p class="text-xs text-slate-500 mt-2">Drafting a roadmap for Bail, Stay, or Trial defense.</p>
-                </div>
-                <div class="p-4">
-                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xl font-bold mx-auto mb-4">3</div>
-                    <h4 class="font-bold text-slate-800">Filing & Argument</h4>
-                    <p class="text-xs text-slate-500 mt-2">Aggressive representation in Court with case laws.</p>
-                </div>
-                <div class="p-4">
-                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xl font-bold mx-auto mb-4">4</div>
-                    <h4 class="font-bold text-slate-800">Relief</h4>
-                    <p class="text-xs text-slate-500 mt-2">Securing Bail, Acquittal, or Decrees for our clients.</p>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <section class="bg-slate-900 text-white py-16 px-6 mb-16 md:mb-0">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-3xl font-bold mb-4">Contact Details</h2>
-                <p class="text-slate-400 mb-8">देर न करें। कानूनी मामलों में समय बहुत कीमती होता है।</p>
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Contact Details</h2>
+            <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 mt-8">
+                <h3 class="text-xl font-bold mb-2">Advocate <span id="footer-name"></span></h3>
+                <p class="text-slate-400 mb-6" id="footer-address">Chamber No. 45, District Court...</p>
                 
-                <div class="space-y-6">
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-blue-400"><i class="fas fa-map-marker-alt"></i></div>
-                        <div>
-                            <h4 class="font-bold text-lg">Lucknow Office</h4>
-                            <p class="text-slate-400 text-sm">Chamber No. 45, Lawyers Block,<br>District Court / High Court, Lucknow.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-blue-400"><i class="fas fa-building"></i></div>
-                        <div>
-                            <h4 class="font-bold text-lg">Kanpur Office</h4>
-                            <p class="text-slate-400 text-sm">Civil Lines, Near Kutchery,<br>Kanpur Nagar.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 text-center">
-                <h3 class="text-xl font-bold mb-6">Book Consultation Today</h3>
-                <a href="tel:8923925757" class="block w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl mb-4 transition">
-                    Call: +91 8923925757
+                <a id="footer-btn-call" href="#" class="block w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl mb-4 transition">
+                    Call Now
                 </a>
-                <a href="https://wa.me/918923925757" class="block w-full bg-green-600 hover:bg-green-500 text-white font-bold py-4 rounded-xl transition">
-                    Chat on WhatsApp
-                </a>
-                <p class="text-xs text-slate-500 mt-4">Consultation Fee: (Adjustable in Case Fee)</p>
             </div>
-        </div>
-        
-        <div class="text-center text-xs text-slate-600 mt-12 pt-8 border-t border-slate-800">
-            &copy; 2026 Advocate Saurabh Yadav. All Rights Reserved.
+            <div class="text-xs text-slate-600 mt-12">
+                &copy; 2026 UP-Legal Directory. All Rights Reserved.
+            </div>
         </div>
     </section>
 
     <div class="md:hidden fixed bottom-0 w-full bg-white border-t border-slate-200 z-50 flex shadow-[0_-5px_10px_rgba(0,0,0,0.1)]">
-        <a href="tel:8923925757" class="flex-1 bg-white text-slate-800 py-3 flex flex-col items-center justify-center active:bg-slate-50">
+        <a id="sticky-call" href="#" class="flex-1 bg-white text-slate-800 py-3 flex flex-col items-center justify-center active:bg-slate-50">
             <i class="fas fa-phone-alt text-blue-600 text-xl mb-1"></i>
             <span class="text-xs font-bold">Call Now</span>
         </a>
-        <a href="https://wa.me/918923925757" class="flex-1 bg-green-600 text-white py-3 flex flex-col items-center justify-center active:bg-green-700">
+        <a id="sticky-whatsapp" href="#" class="flex-1 bg-green-600 text-white py-3 flex flex-col items-center justify-center active:bg-green-700">
             <i class="fab fa-whatsapp text-2xl mb-1"></i>
             <span class="text-xs font-bold">WhatsApp</span>
         </a>
     </div>
 
+    <script>
+        // 1. URL से नाम और शहर निकालें
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name') || "Saurabh Yadav";
+        const city = params.get('city') || "Lucknow";
+
+        // 2. वकीलों का डेटाबेस (आप यहाँ और नाम जोड़ सकते हैं)
+        const database = {
+            "Saurabh Yadav": {
+                phone: "8923925757",
+                exp: "12+",
+                bio: "Advocate Saurabh Yadav is a senior counsel with over 12 years of experience at the Allahabad High Court (Lucknow Bench). He specializes in serious Criminal Defense (302 IPC, NDPS) and high-value Property Disputes. He is known for his aggressive courtroom strategy."
+            },
+            "Sandeep Singh": {
+                phone: "9123456780",
+                exp: "8+",
+                bio: `Advocate Sandeep Singh is a highly respected lawyer in ${city} District Court. He specializes in Civil Litigation and has a proven track record in resolving complex family disputes and property matters efficiently.`
+            },
+            "Priyanka Verma": {
+                phone: "9123456781",
+                exp: "6+",
+                bio: `Advocate Priyanka Verma represents clients with dedication in ${city}. She is an expert in Family Law, focusing on Divorce settlements, Child Custody, and Domestic Violence cases with empathy and legal precision.`
+            },
+            "Vijay Pratap": {
+                phone: "8077081708",
+                exp: "10+",
+                bio: `Advocate Vijay Pratap is a trusted legal advisor in ${city}. With over a decade of experience, he handles both Criminal Bail matters and Cheque Bounce cases effectively.`
+            }
+        };
+
+        // 3. डिफॉल्ट डेटा (अगर वकील का नाम लिस्ट में नहीं मिला)
+        const defaultData = {
+            phone: "9123456780", 
+            exp: "5+",
+            bio: `Advocate ${name} is a verified legal practitioner practicing in ${city} District Court. They handle Civil, Criminal, and Family matters with complete transparency and dedication.`
+        };
+
+        // 4. सही डेटा चुनें
+        const data = database[name] || defaultData;
+
+        // 5. HTML को अपडेट करें (DOM Manipulation)
+        document.getElementById('meta-title').innerText = `Advocate ${name} | Best Lawyer in ${city}`;
+        document.getElementById('hero-name').innerText = name;
+        document.getElementById('hero-city').innerText = city;
+        document.getElementById('hero-bio').innerText = data.bio;
+        document.getElementById('stat-exp').innerText = data.exp;
+        document.getElementById('footer-name').innerText = name;
+        document.getElementById('footer-address').innerText = `Chamber No. 45, ${city} District Court Complex.`;
+
+        // 6. फोटो अपडेट करें
+        document.getElementById('profile-image').src = `https://ui-avatars.com/api/?name=${name.replace(' ', '+')}&background=random&size=512&bold=true`;
+
+        // 7. लिंक्स अपडेट करें
+        const phoneLink = `tel:${data.phone}`;
+        const waLink = `https://wa.me/91${data.phone}`;
+
+        document.getElementById('btn-call').href = phoneLink;
+        document.getElementById('btn-whatsapp').href = waLink;
+        document.getElementById('nav-btn-call').href = phoneLink;
+        document.getElementById('footer-btn-call').href = phoneLink;
+        document.getElementById('sticky-call').href = phoneLink;
+        document.getElementById('sticky-whatsapp').href = waLink;
+
+    </script>
 </body>
 </html>
