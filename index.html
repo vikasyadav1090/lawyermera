@@ -124,58 +124,59 @@
     </footer>
 
     <script>
-        // DATA OBJECT: Yahan aap Name aur Phone number edit kar sakte hain
-        // Structure: { name: "Name", phone: "Number" }
+        // DATA OBJECT: Yahan aap Name, Phone, aur Image Link edit kar sakte hain
+        // Structure: { name: "Name", phone: "Number", image: "LINK_DAALEIN" }
+        // Agar image link khali ('') chodenge to automatic letter avatar dikhega.
         
         const advocatesData = {
             'Lucknow': [
-                { name: 'Saurabh Yadav', phone: '8923925757' }, // Rank 1
-                { name: 'Sandeep Singh', phone: '9123456780' }, // Rank 2
-                { name: 'Priyanka Verma', phone: '9123456781' },
-                { name: 'Amit Shukla', phone: '9123456782' },
-                { name: 'Rahul Mishra', phone: '9123456783' }
+                { name: 'Saurabh Yadav', phone: '8923925757', image: 'LINK_DAALEIN' }, // Rank 1
+                { name: 'Sandeep Singh', phone: '9123456780', image: 'LINK_DAALEIN' }, // Rank 2
+                { name: 'Priyanka Verma', phone: '9123456781', image: 'LINK_DAALEIN' },
+                { name: 'Amit Shukla', phone: '9123456782', image: 'LINK_DAALEIN' },
+                { name: 'Rahul Mishra', phone: '9123456783', image: 'LINK_DAALEIN' }
             ],
             'Kanpur': [
-                { name: 'Saurabh Yadav', phone: '8923925757' }, // Rank 1 (Same as Lucknow)
-                { name: 'Vijay Pratap', phone: '8077081708' },
-                { name: 'Sapna Reddy', phone: '9123456785' },
-                { name: 'Ishwar Das', phone: '9123456786' },
-                { name: 'Pankaj Saini', phone: '9123456787' }
+                { name: 'Saurabh Yadav', phone: '8923925757', image: 'LINK_DAALEIN' }, // Rank 1 (Same as Lucknow)
+                { name: 'Vijay Pratap', phone: '8077081708', image: 'LINK_DAALEIN' },
+                { name: 'Sapna Reddy', phone: '9123456785', image: 'LINK_DAALEIN' },
+                { name: 'Ishwar Das', phone: '9123456786', image: 'LINK_DAALEIN' },
+                { name: 'Pankaj Saini', phone: '9123456787', image: 'LINK_DAALEIN' }
             ],
             'Etawah': [
-                { name: 'Vikas Yadav', phone: '8979737979' }, // Rank 1
-                { name: 'Mahi Pathan', phone: '8126687217' },
-                { name: 'Sumit Gaur', phone: '9123456789' },
-                { name: 'Alok Pandey', phone: '9123456790' },
-                { name: 'Neeraj Kumar', phone: '9123456791' }
+                { name: 'Vikas Yadav', phone: '8979737979', image: 'LINK_DAALEIN' }, // Rank 1
+                { name: 'Mahi Pathan', phone: '8126687217', image: 'LINK_DAALEIN' },
+                { name: 'Sumit Gaur', phone: '9123456789', image: 'LINK_DAALEIN' },
+                { name: 'Alok Pandey', phone: '9123456790', image: 'LINK_DAALEIN' },
+                { name: 'Neeraj Kumar', phone: '9123456791', image: 'LINK_DAALEIN' }
             ],
             'Mainpuri': [
-                { name: 'Vikas Yadav', phone: '8979737979' }, // Rank 1 (Same as Etawah)
-                { name: 'Vimal Kumar', phone: '9123456792' },
-                { name: 'Shailendra Singh', phone: '9123456793' },
-                { name: 'Anand Rao', phone: '9123456794' },
-                { name: 'Kamal Kant', phone: '9123456795' }
+                { name: 'Vikas Yadav', phone: '8979737979', image: 'LINK_DAALEIN' }, // Rank 1 (Same as Etawah)
+                { name: 'Vimal Kumar', phone: '9123456792', image: 'LINK_DAALEIN' },
+                { name: 'Shailendra Singh', phone: '9123456793', image: 'LINK_DAALEIN' },
+                { name: 'Anand Rao', phone: '9123456794', image: 'LINK_DAALEIN' },
+                { name: 'Kamal Kant', phone: '9123456795', image: 'LINK_DAALEIN' }
             ],
             'Agra': [
-                { name: 'Suresh Sharma', phone: '98XXXXXXXX' },
-                { name: 'Mohit Jain', phone: '98XXXXXXXX' },
-                { name: 'Anjali Gupta', phone: '98XXXXXXXX' },
-                { name: 'Vikram Rathore', phone: '98XXXXXXXX' },
-                { name: 'Deepak Tyagi', phone: '98XXXXXXXX' }
+                { name: 'Suresh Sharma', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
+                { name: 'Mohit Jain', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
+                { name: 'Anjali Gupta', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
+                { name: 'Vikram Rathore', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
+                { name: 'Deepak Tyagi', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' }
             ],
             'Firozabad': [
-                { name: 'Madhur Yadav', phone: '8076156434' },
-                { name: 'Manish Lodhi', phone: '98XXXXXXXX' },
-                { name: 'Rinku Baghel', phone: '98XXXXXXXX' },
-                { name: 'Tarun Dev', phone: '98XXXXXXXX' },
-                { name: 'Arpit Jain', phone: '98XXXXXXXX' }
+                { name: 'Madhur Yadav', phone: '8076156434', image: 'LINK_DAALEIN' },
+                { name: 'Manish Lodhi', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
+                { name: 'Rinku Baghel', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
+                { name: 'Tarun Dev', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
+                { name: 'Arpit Jain', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' }
             ],
             'Auraiya': [
-                { name: 'Vijay Pratap', phone: '8077081708' },
-                { name: 'Shivpal Singh', phone: '98XXXXXXXX' },
-                { name: 'Ram Mohan', phone: '98XXXXXXXX' },
-                { name: 'Gaurav Das', phone: '98XXXXXXXX' },
-                { name: 'Tushar Kant', phone: '98XXXXXXXX' }
+                { name: 'Vijay Pratap', phone: '8077081708', image: 'LINK_DAALEIN' },
+                { name: 'Shivpal Singh', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
+                { name: 'Ram Mohan', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
+                { name: 'Gaurav Das', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
+                { name: 'Tushar Kant', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' }
             ]
         };
 
@@ -190,12 +191,17 @@
             cityLawyers.forEach((lawyer, index) => {
                 const rank = index + 1;
                 
+                // Logic: Agar image link hai toh woh use karo, nahi toh default avatar
+                const imageSrc = lawyer.image && lawyer.image.trim() !== "" 
+                    ? lawyer.image 
+                    : `https://ui-avatars.com/api/?name=${lawyer.name.replace(' ', '+')}&background=random&size=150`;
+
                 container.innerHTML += `
                 <div class="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm hover-lift relative overflow-hidden group mb-4">
                     <div class="absolute top-0 right-0 bg-indigo-50 text-indigo-700 text-[10px] font-bold px-3 py-1 rounded-bl-xl">RANK #${rank}</div>
                     
                     <div class="flex items-start space-x-4">
-                        <img src="https://ui-avatars.com/api/?name=${lawyer.name.replace(' ', '+')}&background=random&size=150" alt="${lawyer.name}" class="w-16 h-16 rounded-xl object-cover shadow-sm">
+                        <img src="${imageSrc}" alt="${lawyer.name}" class="w-16 h-16 rounded-xl object-cover shadow-sm">
                         
                         <div>
                             <h3 class="font-bold text-indigo-950 text-lg">Advocate ${lawyer.name}</h3>
