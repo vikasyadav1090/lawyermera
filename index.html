@@ -124,59 +124,60 @@
     </footer>
 
     <script>
-        // DATA OBJECT: Yahan aap Name, Phone, aur Image Link edit kar sakte hain
-        // Structure: { name: "Name", phone: "Number", image: "LINK_DAALEIN" }
-        // Agar image link khali ('') chodenge to automatic letter avatar dikhega.
+        // ==========================================
+        // YAHAN DATA UPDATE KAREIN (35 ADVOCATES)
+        // ==========================================
+        // Ab aap yahan jo PHOTO aur PHONE dalenge, wo agle page par bhi dikhega.
         
         const advocatesData = {
             'Lucknow': [
-                { name: 'Saurabh Yadav', phone: '8923925757', image: 'https://scontent.fagr1-4.fna.fbcdn.net/v/t39.30808-6/365439285_6236453599797508_1282769386340185095_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=nWN53q7CKC0Q7kNvwGDPxhD&_nc_oc=AdkS2uPNqw0lS_nOJTO0tnikP984CvCpg7r0KtL0zXkGRXfTB2AT5r57G_rvhYsDzZ3MCG8raT40lnK4hCGttbN0&_nc_zt=23&_nc_ht=scontent.fagr1-4.fna&_nc_gid=xKINzB-VbCjYCjOg2N32lw&oh=00_Afvzvyl8lqyKze7NdP_t3Oud9uVyl1b6GirLjYqcC4Ef_g&oe=698EAC0A ' }, // Rank 1
-                { name: 'Sandeep Singh', phone: '9123456780', image: 'LINK_DAALEIN' }, // Rank 2
-                { name: 'Priyanka Verma', phone: '9123456781', image: 'LINK_DAALEIN' },
-                { name: 'Amit Shukla', phone: '9123456782', image: 'LINK_DAALEIN' },
-                { name: 'Rahul Mishra', phone: '9123456783', image: 'LINK_DAALEIN' }
+                { name: 'Saurabh Yadav', phone: '8923925757', image: 'https://scontent.fagr1-4.fna.fbcdn.net/v/t39.30808-6/365439285_6236453599797508_1282769386340185095_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=nWN53q7CKC0Q7kNvwGDPxhD&_nc_oc=AdkS2uPNqw0lS_nOJTO0tnikP984CvCpg7r0KtL0zXkGRXfTB2AT5r57G_rvhYsDzZ3MCG8raT40lnK4hCGttbN0&_nc_zt=23&_nc_ht=scontent.fagr1-4.fna&_nc_gid=xKINzB-VbCjYCjOg2N32lw&oh=00_Afvzvyl8lqyKze7NdP_t3Oud9uVyl1b6GirLjYqcC4Ef_g&oe=698EAC0A ' },
+                { name: 'Sandeep Singh', phone: '9123456780', image: '' }, 
+                { name: 'Priyanka Verma', phone: '9123456781', image: '' },
+                { name: 'Amit Shukla', phone: '9123456782', image: '' },
+                { name: 'Rahul Mishra', phone: '9123456783', image: '' }
             ],
             'Kanpur': [
-                { name: 'Saurabh Yadav', phone: '8923925757', image: 'LINK_DAALEIN' }, // Rank 1 (Same as Lucknow)
-                { name: 'Vijay Pratap', phone: '8077081708', image: 'LINK_DAALEIN' },
-                { name: 'Sapna Reddy', phone: '9123456785', image: 'LINK_DAALEIN' },
-                { name: 'Ishwar Das', phone: '9123456786', image: 'LINK_DAALEIN' },
-                { name: 'Pankaj Saini', phone: '9123456787', image: 'LINK_DAALEIN' }
+                { name: 'Saurabh Yadav', phone: '8923925757', image: '' },
+                { name: 'Vijay Pratap', phone: '8077081708', image: '' },
+                { name: 'Sapna Reddy', phone: '9123456785', image: '' },
+                { name: 'Ishwar Das', phone: '9123456786', image: '' },
+                { name: 'Pankaj Saini', phone: '9123456787', image: '' }
             ],
             'Etawah': [
-                { name: 'Vikas Yadav', phone: '8979737979', image: 'https://drive.google.com/file/d/1kjOVS3CoEJscEK46SLuvRml_bTNX2983/view?usp=drive_link' }, // Rank 1
+                { name: 'Vikas Yadav', phone: '8979737979', image: 'https://drive.google.com/file/d/1kjOVS3CoEJscEK46SLuvRml_bTNX2983/view?usp=drive_link' },
                 { name: 'Mahi Pathan', phone: '8126687217', image: 'https://scontent.fagr1-4.fna.fbcdn.net/v/t39.30808-6/628402817_3364349537036223_3053191379679806416_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GtHnRpned8IQ7kNvwHVQkHU&_nc_oc=AdlnFfB1ABkY7a7urC9WyZpXqgp4GK-wESGvvrYHzME0jei_piCa_0p1K09KrX6IgOadWruEj2qVonNHM9mUQXlS&_nc_zt=23&_nc_ht=scontent.fagr1-4.fna&_nc_gid=8T21QOh1qgOD5NI6Yjb4rA&oh=00_AftyP4OBVUNkOGWpLvGytdfcl86nKTaE3w5IMxjEV_BRpg&oe=698FAB60' },
-                { name: 'Sumit Gaur', phone: '9123456789', image: 'LINK_DAALEIN' },
-                { name: 'Alok Pandey', phone: '9123456790', image: 'LINK_DAALEIN' },
-                { name: 'Neeraj Kumar', phone: '9123456791', image: 'LINK_DAALEIN' }
+                { name: 'Sumit Gaur', phone: '9123456789', image: '' },
+                { name: 'Alok Pandey', phone: '9123456790', image: '' },
+                { name: 'Neeraj Kumar', phone: '9123456791', image: '' }
             ],
             'Mainpuri': [
-                { name: 'Vikas Yadav', phone: '8979737979', image: 'LINK_DAALEIN' }, // Rank 1 (Same as Etawah)
-                { name: 'Vimal Kumar', phone: '9123456792', image: 'LINK_DAALEIN' },
-                { name: 'Shailendra Singh', phone: '9123456793', image: 'LINK_DAALEIN' },
-                { name: 'Anand Rao', phone: '9123456794', image: 'LINK_DAALEIN' },
-                { name: 'Kamal Kant', phone: '9123456795', image: 'LINK_DAALEIN' }
+                { name: 'Vikas Yadav', phone: '8979737979', image: '' },
+                { name: 'Vimal Kumar', phone: '9123456792', image: '' },
+                { name: 'Shailendra Singh', phone: '9123456793', image: '' },
+                { name: 'Anand Rao', phone: '9123456794', image: '' },
+                { name: 'Kamal Kant', phone: '9123456795', image: '' }
             ],
             'Agra': [
-                { name: 'Suresh Sharma', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
+                { name: 'Suresh Sharma', phone: '98XXXXXXXX', image: '' },
                 { name: 'Vijay Pratap', phone: '98XXXXXXXX', image: 'https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-6/629730773_3364374483700395_7043192700718124310_n.jpg?stp=dst-jpg_p552x414_tt6&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=c9qy5ixHS58Q7kNvwHRTe7G&_nc_oc=AdlVRHm4ffyMrRwCjWef5yIKGYNFi5IPmr2fgnu-L4iRWHsxagTODM8TFPHy4jzbX-4pyTURrFKQUNMXRutL183X&_nc_zt=23&_nc_ht=scontent.fagr1-2.fna&_nc_gid=yN6JOKgN7-P-HEyZDuFf1A&oh=00_AfvSMzHJ8k2qzBT6ew_OHefXo9TZsYStfEvfH5jBFZlx2w&oe=698F923E' },
-                { name: 'Anjali Gupta', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
-                { name: 'Vikram Rathore', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
-                { name: 'Deepak Tyagi', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' }
+                { name: 'Anjali Gupta', phone: '98XXXXXXXX', image: '' },
+                { name: 'Vikram Rathore', phone: '98XXXXXXXX', image: '' },
+                { name: 'Deepak Tyagi', phone: '98XXXXXXXX', image: '' }
             ],
             'Firozabad': [
-                { name: 'Madhur Yadav', phone: '8076156434', image: 'LINK_DAALEIN' },
-                { name: 'Manish Lodhi', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
-                { name: 'Rinku Baghel', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
-                { name: 'Tarun Dev', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
-                { name: 'Arpit Jain', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' }
+                { name: 'Madhur Yadav', phone: '8076156434', image: '' },
+                { name: 'Manish Lodhi', phone: '98XXXXXXXX', image: '' },
+                { name: 'Rinku Baghel', phone: '98XXXXXXXX', image: '' },
+                { name: 'Tarun Dev', phone: '98XXXXXXXX', image: '' },
+                { name: 'Arpit Jain', phone: '98XXXXXXXX', image: '' }
             ],
             'Auraiya': [
                 { name: 'Vijay Pratap', phone: '8077081708', image: 'https://scontent.fagr1-2.fna.fbcdn.net/v/t39.30808-6/629730773_3364374483700395_7043192700718124310_n.jpg?stp=dst-jpg_p552x414_tt6&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=c9qy5ixHS58Q7kNvwHRTe7G&_nc_oc=AdlVRHm4ffyMrRwCjWef5yIKGYNFi5IPmr2fgnu-L4iRWHsxagTODM8TFPHy4jzbX-4pyTURrFKQUNMXRutL183X&_nc_zt=23&_nc_ht=scontent.fagr1-2.fna&_nc_gid=yN6JOKgN7-P-HEyZDuFf1A&oh=00_AfvSMzHJ8k2qzBT6ew_OHefXo9TZsYStfEvfH5jBFZlx2w&oe=698F923E' },
-                { name: 'Shivpal Singh', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
-                { name: 'Ram Mohan', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
-                { name: 'Gaurav Das', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' },
-                { name: 'Tushar Kant', phone: '98XXXXXXXX', image: 'LINK_DAALEIN' }
+                { name: 'Shivpal Singh', phone: '98XXXXXXXX', image: '' },
+                { name: 'Ram Mohan', phone: '98XXXXXXXX', image: '' },
+                { name: 'Gaurav Das', phone: '98XXXXXXXX', image: '' },
+                { name: 'Tushar Kant', phone: '98XXXXXXXX', image: '' }
             ]
         };
 
@@ -191,17 +192,20 @@
             cityLawyers.forEach((lawyer, index) => {
                 const rank = index + 1;
                 
-                // Logic: Agar image link hai toh woh use karo, nahi toh default avatar
+                // Logic: Default avatar agar image khali ho
                 const imageSrc = lawyer.image && lawyer.image.trim() !== "" 
                     ? lawyer.image 
                     : `https://ui-avatars.com/api/?name=${lawyer.name.replace(' ', '+')}&background=random&size=150`;
+
+                // URL ME DATA BHEJNA (Taaki Profile Page par dikhe)
+                const profileLink = `profile.html?name=${encodeURIComponent(lawyer.name)}&city=${city}&phone=${lawyer.phone}&image=${encodeURIComponent(lawyer.image)}`;
 
                 container.innerHTML += `
                 <div class="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm hover-lift relative overflow-hidden group mb-4">
                     <div class="absolute top-0 right-0 bg-indigo-50 text-indigo-700 text-[10px] font-bold px-3 py-1 rounded-bl-xl">RANK #${rank}</div>
                     
                     <div class="flex items-start space-x-4">
-                        <img src="${imageSrc}" alt="${lawyer.name}" class="w-16 h-16 rounded-xl object-cover shadow-sm">
+                        <img src="${imageSrc}" alt="${lawyer.name}" class="w-16 h-16 rounded-xl object-cover shadow-sm bg-slate-100">
                         
                         <div>
                             <h3 class="font-bold text-indigo-950 text-lg">Advocate ${lawyer.name}</h3>
@@ -217,7 +221,7 @@
                         <a href="tel:${lawyer.phone}" class="flex-1 bg-indigo-950 text-white py-3 rounded-xl text-xs font-bold text-center">
                             <i class="fas fa-phone mr-2"></i> Call Now
                         </a>
-                        <a href="profile.html?name=${encodeURIComponent(lawyer.name)}&city=${city}" class="flex-1 border border-indigo-200 text-indigo-900 py-3 rounded-xl text-xs font-bold text-center hover:bg-indigo-50">
+                        <a href="${profileLink}" class="flex-1 border border-indigo-200 text-indigo-900 py-3 rounded-xl text-xs font-bold text-center hover:bg-indigo-50">
                             View Profile
                         </a>
                     </div>
@@ -229,4 +233,4 @@
         filterList('Lucknow');
     </script>
 </body>
-</html>
+</html>  
