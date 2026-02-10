@@ -104,7 +104,7 @@
         </div>
     </section>
 
-    <section class="max-w-5xl mx-auto px-6 py-16 text-slate-700 leading-loose" id="seo-container">
+    <section class="max-w-4xl mx-auto px-6 py-10 text-slate-700 leading-relaxed text-lg" id="seo-container">
         </section>
 
     <section class="bg-slate-900 text-white py-16 px-6 mb-16 md:mb-0">
@@ -129,37 +129,46 @@
     </div>
 
     <script>
-        // 1. Get Params
+        // 1. Get Params from URL
         const params = new URLSearchParams(window.location.search);
+        
+        // Data Extraction
         const name = params.get('name') || "Saurabh Yadav";
         const city = params.get('city') || "Lucknow";
-
-        // 2. Database
-        const database = {
-            "Saurabh Yadav": { phone: "8923925757", exp: "12+", bio: "Advocate Saurabh Yadav is a senior counsel specializing in serious Criminal Defense (302 IPC, NDPS) and high-value Property Disputes." },
-            "Sandeep Singh": { phone: "9123456780", exp: "8+", bio: `Advocate Sandeep Singh is a highly respected lawyer in ${city} District Court, specializing in Civil Litigation.` },
-            "Priyanka Verma": { phone: "9123456781", exp: "6+", bio: `Advocate Priyanka Verma is an expert in Family Law, Divorce settlements, and Child Custody cases in ${city}.` },
-            "Vijay Pratap": { phone: "8077081708", exp: "10+", bio: `Advocate Vijay Pratap is a trusted legal advisor in ${city} for Criminal Bail matters and Cheque Bounce cases.` }
+        
+        // Receive Data from Index Page
+        const urlPhone = params.get('phone');
+        const urlImage = params.get('image');
+        
+        // Final Data Object
+        const data = {
+            phone: (urlPhone && urlPhone !== "undefined" && urlPhone !== "") ? urlPhone : "9123456780",
+            photo: (urlImage && urlImage !== "undefined" && urlImage !== "") ? urlImage : "",
+            exp: "12+ Years",
+            bio: `Advocate ${name} is a senior counsel in ${city} District Court, specializing in serious Criminal Defense (302 IPC, NDPS) and high-value Property Disputes.`
         };
-
-        const defaultData = { phone: "9123456780", exp: "5+", bio: `Advocate ${name} is a verified legal practitioner practicing in ${city} District Court.` };
-        const data = database[name] || defaultData;
 
         // 3. Update Basic Elements
         document.getElementById('meta-title').innerText = `Advocate ${name} | Best Lawyer in ${city} District Court`;
-        document.getElementById('meta-desc').setAttribute("content", `Contact Advocate ${name} in ${city} for Bail, Property Disputes, and Divorce cases. Top rated Lawyer in ${city} District Court.`);
+        document.getElementById('meta-desc').setAttribute("content", `Contact Advocate ${name} in ${city}. Verified Top Lawyer. Call: ${data.phone}`);
         
         document.getElementById('hero-name').innerText = name;
         document.getElementById('hero-city').innerText = city;
         document.getElementById('hero-bio').innerText = data.bio;
         document.getElementById('footer-name').innerText = name;
         document.getElementById('footer-address').innerText = `Chamber No. 45, Lawyers Block, ${city} District Court Complex.`;
-        document.getElementById('profile-image').src = `https://ui-avatars.com/api/?name=${name.replace(' ', '+')}&background=random&size=512&bold=true`;
 
+        // 4. Image Logic
+        if (data.photo && data.photo !== "") {
+            document.getElementById('profile-image').src = data.photo;
+        } else {
+            document.getElementById('profile-image').src = `https://ui-avatars.com/api/?name=${name.replace(' ', '+')}&background=random&size=512&bold=true`;
+        }
+
+        // 5. Update Call Buttons
         const phoneLink = `tel:${data.phone}`;
         const waLink = `https://wa.me/91${data.phone}`;
         
-        // Update All Buttons
         const buttons = ['btn-call', 'btn-whatsapp', 'nav-btn-call', 'footer-btn-call', 'sticky-call', 'sticky-whatsapp'];
         buttons.forEach(id => {
             const el = document.getElementById(id);
@@ -169,75 +178,98 @@
             }
         });
 
-        // 4. 🔥 GENERATE DYNAMIC CITY SEO CONTENT 🔥
+        // 6. GENERATE EXTENSIVE SEO CONTENT (500 Words)
         const seoContainer = document.getElementById('seo-container');
         
         const seoHTML = `
-            <div class="mb-12 border-b border-slate-200 pb-10">
-                <h2 class="text-3xl font-bold text-slate-900 mb-6">Why Choose Advocate ${name} in ${city}?</h2>
-                <p class="mb-4">
-                    Finding the right legal representation in <strong>${city}</strong> is crucial for the success of your case. 
-                    <strong>Advocate ${name}</strong> is widely recognized as one of the <em>Best Lawyers in ${city} District Court</em>. 
-                    With over ${data.exp} years of experience, they have successfully handled hundreds of cases involving 
-                    Criminal Defense, Property Disputes, and Family Law within the jurisdiction of <strong>${city}</strong>.
-                </p>
-                <p>
-                    Whether you need an <strong>Anticipatory Bail from the Sessions Court in ${city}</strong> or need to file a 
-                    <strong>Stay Order regarding a property in ${city}</strong>, Adv. ${name} provides strategic legal counsel 
-                    tailored to the local judicial system.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-12">
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
-                        <span class="w-2 h-2 bg-blue-600 rounded-full mr-2"></span> Criminal Lawyer in ${city}
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6 border-b pb-4">Best Advocate in ${city} District Court: Advocate ${name}</h2>
+                    <p class="mb-4">
+                        Finding the right legal representation is the most critical step in winning any legal battle. If you are looking for the <strong>Best Lawyer in ${city}</strong>, then 
+                        <strong>Advocate ${name}</strong> is a name you can trust. With over a decade of experience in the <strong>${city} District & Sessions Court</strong>, 
+                        Adv. ${name} has built a reputation for handling complex cases with strategic precision and aggressive defense.
+                    </p>
+                    <p class="mb-4">
+                        Whether you are facing criminal charges, dealing with a messy divorce, or fighting for your ancestral property, you need a lawyer who understands the 
+                        local judicial system of <strong>${city}</strong> inside out. Adv. ${name} provides clear, honest, and result-oriented legal advice to clients across Uttar Pradesh.
+                    </p>
+                </div>
+
+                <div class="bg-red-50 p-8 rounded-2xl border border-red-100">
+                    <h3 class="text-2xl font-bold text-red-800 mb-4 flex items-center">
+                        <i class="fas fa-gavel mr-3"></i> Criminal Defense Lawyer in ${city}
                     </h3>
-                    <p class="text-sm mb-4">
-                        If you or a loved one is facing police action in <strong>${city}</strong>, immediate legal help is needed. 
-                        We specialize in securing <strong>Regular Bail and Anticipatory Bail</strong> from the ${city} Courts. 
-                        We handle cases under IPC Sections 302, 307, 498A, and NDPS Act with a high success rate.
+                    <p class="mb-4 text-slate-700">
+                        Facing a criminal charge can be terrifying. Immediate action is required to protect your liberty. 
+                        <strong>Advocate ${name}</strong> specializes in Criminal Defense in ${city}, offering services for:
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 mb-4 text-slate-700">
+                        <li><strong>Bail Matters:</strong> Securing Regular Bail, Interim Bail, and Anticipatory Bail from the ${city} Sessions Court and Allahabad High Court.</li>
+                        <li><strong>FIR Quashing:</strong> Filing petitions under Section 482 CrPC to quash false FIRs.</li>
+                        <li><strong>Serious Offenses:</strong> Defense in cases related to Murder (302 IPC), Attempt to Murder (307 IPC), Dowry Death (304B), and NDPS Act cases.</li>
+                    </ul>
+                    <p class="text-sm font-semibold text-red-700">
+                        Don't let police harassment ruin your life. Contact Adv. ${name} immediately at <a href="tel:${data.phone}" class="underline">${data.phone}</a>.
                     </p>
                 </div>
 
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
-                        <span class="w-2 h-2 bg-blue-600 rounded-full mr-2"></span> Property Advocate in ${city}
-                    </h3>
-                    <p class="text-sm mb-4">
-                        Property disputes in <strong>${city}</strong> can be complex. Adv. ${name} is an expert in 
-                        <strong>Civil Litigation in ${city}</strong>, handling cases related to Illegal Possession, 
-                        Ancestral Property Partition, and Land Registry fraud in local tehsils of ${city}.
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Divorce & Family Lawyer in ${city}</h3>
+                    <p class="mb-4">
+                        Family disputes are emotionally draining. <strong>Advocate ${name}</strong> acts as a compassionate yet strong legal pillar for clients dealing with matrimonial issues.
+                        As a top <strong>Divorce Lawyer in ${city} Family Court</strong>, we handle:
                     </p>
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200">
+                            <h4 class="font-bold text-slate-800 mb-2">Mutual Consent Divorce</h4>
+                            <p class="text-sm text-slate-600">Quick and hassle-free divorce process when both parties agree, filed in ${city} Family Court.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200">
+                            <h4 class="font-bold text-slate-800 mb-2">Contested Divorce & 498A</h4>
+                            <p class="text-sm text-slate-600">Defense against false dowry harassment cases (498A IPC) and fighting for Child Custody rights.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-2xl border border-blue-100">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4 flex items-center">
+                        <i class="fas fa-home mr-3"></i> Property & Civil Advocate in ${city}
+                    </h3>
+                    <p class="mb-4 text-slate-700">
+                        Property disputes in <strong>${city}</strong> often drag on for years without the right legal counsel. Adv. ${name} is an expert in Civil Litigation, helping you with:
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 mb-4 text-slate-700">
+                        <li><strong>Stay Orders:</strong> Getting immediate Injunction/Stay orders from the Civil Judge in ${city} to stop illegal construction or sale.</li>
+                        <li><strong>Partition Suits:</strong> Legally dividing ancestral property among brothers and family members.</li>
+                        <li><strong>Possession Suits:</strong> Recovering possession of your land or house from illegal occupants.</li>
+                        <li><strong>Will & Succession:</strong> Drafting legal Wills and obtaining Succession Certificates.</li>
+                    </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
-                        <span class="w-2 h-2 bg-blue-600 rounded-full mr-2"></span> Divorce Lawyer in ${city}
-                    </h3>
-                    <p class="text-sm mb-4">
-                        We provide compassionate legal support for <strong>Divorce cases in ${city} Family Court</strong>. 
-                        Whether it is a Mutual Consent Divorce or a Contested Divorce involving Alimony and Child Custody, 
-                        we ensure your rights are protected under the law.
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Cheque Bounce (138 NI Act) Lawyer in ${city}</h3>
+                    <p class="mb-4">
+                        Is your hard-earned money stuck? If someone has given you a cheque that has bounced, you have limited time to act. 
+                        <strong>Advocate ${name}</strong> helps creditors file criminal complaints under <strong>Section 138 of the Negotiable Instruments Act</strong> in ${city} Courts.
+                        We ensure speedy issuance of legal notices and court summons to recover your money with interest.
                     </p>
                 </div>
 
-                <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
-                        <span class="w-2 h-2 bg-blue-600 rounded-full mr-2"></span> Cheque Bounce Lawyer in ${city}
-                    </h3>
-                    <p class="text-sm mb-4">
-                        Has your payment been stuck? We help businesses and individuals in <strong>${city}</strong> file 
-                        cases under Section 138 of the NI Act (Cheque Bounce) to recover their money swiftly through the court process.
+                <div class="bg-slate-900 text-white p-8 rounded-2xl text-center shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-4">Consult Advocate ${name} Today</h3>
+                    <p class="mb-6 text-slate-300">
+                        Legal issues do not get better with time; they only get worse. Secure your future with the right legal advice.
+                        <br>Office located at: <strong>Chamber No. 45, District Court, ${city}, Uttar Pradesh.</strong>
                     </p>
+                    <a href="tel:${data.phone}" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-full transition transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-phone-alt mr-2"></i> Call Now: ${data.phone}
+                    </a>
                 </div>
-            </div>
-
-            <div class="mt-12 bg-blue-50 p-6 rounded-xl border border-blue-100 text-center">
-                <h3 class="font-bold text-slate-900 mb-2">Legal Consultation in ${city}</h3>
-                <p class="text-sm text-slate-600">
-                    Don't wait until it's too late. Visit our chamber at <strong>District Court, ${city}</strong> or 
-                    call us for an immediate phone consultation.
+                
+                <p class="text-xs text-center text-slate-400 mt-8">
+                    *Disclaimer: The information provided above regarding Advocate ${name} in ${city} is for general informational purposes. 
+                    Legal outcomes vary by case facts. Please consult directly for specific advice.
                 </p>
             </div>
         `;
